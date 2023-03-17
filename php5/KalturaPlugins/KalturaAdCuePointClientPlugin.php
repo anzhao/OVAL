@@ -250,4 +250,3 @@ class KalturaAdCuePointClientPlugin extends KalturaClientPlugin
 		return 'adCuePoint';
 	}
 }
-

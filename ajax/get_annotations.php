@@ -33,9 +33,9 @@ startSession();
 $userID = $_SESSION['user_id'];
 
 
-$videoID            = $_GET['video_id'];
-$annotationMode     = $_GET['annotation_mode'];
-$viewMode           = intval($_GET['view_mode']);
+$videoID = $_GET['video_id'];
+$annotationMode = $_GET['annotation_mode'];
+$viewMode = intval($_GET['view_mode']);
 
 //(isset($flagMode)) ? $flagMode = true : $flagMode = false;
 
@@ -45,8 +45,8 @@ $videoID = str_replace("#", "", $videoID);
 //(is_bool($flagMode)) ? print "flagMode is a bool" : print "flagMode is ! a bool";
 //(is_string($flagMode)) ? print "flagMode is a string" : print "flagMode is ! a string";
 
-$annotationsDB  = new annotationsDB();
-$annotations    = $annotationsDB->getAnnotations($videoID, $userID, $annotationMode, $viewMode);
+$annotationsDB = new annotationsDB();
+$annotations = $annotationsDB->getAnnotations($videoID, $userID, $annotationMode, $viewMode);
 
 //print_r($annotations);
 $jsonString;
@@ -54,15 +54,15 @@ $jsonString;
 // TODO: this bit is redundant
 // annotation ownership property
 if (count($annotations) > 0) {
-    foreach ($annotations as $key=>$val) {
-		
-    	//print "key:$key<br />";
+    foreach ($annotations as $key => $val) {
+
+        //print "key:$key<br />";
         if ($userID == $annotations[$key]['user_id']) {
             $annotations[$key]['my_annotation'] = "true";
         } else {
             $annotations[$key]['my_annotation'] = "false";
         }
-        
+
         // automatically make links clickable (while stripping out everything else to prevent XSS)
         $annotations[$key]['description_with_html'] = makeLinksClickable($annotations[$key]['description']);
     }

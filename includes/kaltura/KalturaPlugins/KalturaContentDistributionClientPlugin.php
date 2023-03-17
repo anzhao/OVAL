@@ -1994,7 +1994,7 @@ class KalturaContentDistributionClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaContentDistributionClientPlugin($client);
 		return self::$instance;
 	}
@@ -2022,4 +2022,3 @@ class KalturaContentDistributionClientPlugin extends KalturaClientPlugin
 		return 'contentDistribution';
 	}
 }
-

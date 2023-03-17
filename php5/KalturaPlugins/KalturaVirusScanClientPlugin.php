@@ -503,4 +503,3 @@ class KalturaVirusScanClientPlugin extends KalturaClientPlugin
 		return 'virusScan';
 	}
 }
-

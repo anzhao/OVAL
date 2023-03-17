@@ -375,4 +375,3 @@ class KalturaVarConsoleClientPlugin extends KalturaClientPlugin
 		return 'varConsole';
 	}
 }
-

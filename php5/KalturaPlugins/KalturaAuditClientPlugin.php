@@ -872,4 +872,3 @@ class KalturaAuditClientPlugin extends KalturaClientPlugin
 		return 'audit';
 	}
 }
-

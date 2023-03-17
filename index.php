@@ -259,7 +259,7 @@ $users->close();
 	
 	$media->close();
 
-    print "\tvar mediaDuration = $duration;\n";
+  print "\tvar mediaDuration = $duration;\n";
 
 // print "\tvar mediaDuration = 678;\n";
 

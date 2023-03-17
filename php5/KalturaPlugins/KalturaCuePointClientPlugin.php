@@ -585,4 +585,3 @@ class KalturaCuePointClientPlugin extends KalturaClientPlugin
 		return 'cuePoint';
 	}
 }
-

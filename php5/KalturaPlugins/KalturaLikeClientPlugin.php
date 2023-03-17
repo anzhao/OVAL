@@ -131,4 +131,3 @@ class KalturaLikeClientPlugin extends KalturaClientPlugin
 		return 'like';
 	}
 }
-

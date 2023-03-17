@@ -32,7 +32,8 @@ include_once(dirname(__FILE__) . '/users.php');
 include_once("/var/www/config/clas/$configFolderName/db_config.php");
 
 
-class annotationsDB {
+class annotationsDB
+{
 	var $link;
 
 	function annotationsDB()
@@ -40,26 +41,27 @@ class annotationsDB {
 		global $mysqlUser, $mysqlPassword, $database;
 
 		$this->link = mysql_connect('localhost', $mysqlUser, $mysqlPassword);
-		if (!$this->link) die('could not connect: ' . mysql_error());
+		if (!$this->link)
+			die('could not connect: ' . mysql_error());
 
 		mysql_select_db($database) or die(mysql_error());
 	}
 
-	function addAnnotation($videoID="video ID", $userID="user ID", $userName="NO NAME", $startTime, $endTime, $description, $tags="no tags yet", $isPrivate=0, $isDeleted=0, $videoAnnotationID="NULL", $confidence_type, $parent_id="NULL", $child_id="NULL", $creation_date="NULL")
+	function addAnnotation($videoID = "video ID", $userID = "user ID", $userName = "NO NAME", $startTime, $endTime, $description, $tags = "no tags yet", $isPrivate = 0, $isDeleted = 0, $videoAnnotationID = "NULL", $confidence_type, $parent_id = "NULL", $child_id = "NULL", $creation_date = "NULL")
 	{
 		//TODO: format query like this
 		/*
 		$query = sprintf("SELECT * FROM users WHERE user='%s' AND password='%s'",
-				mysql_real_escape_string($user),
-				mysql_real_escape_string($password));
+		mysql_real_escape_string($user),
+		mysql_real_escape_string($password));
 		*/
 		if (get_magic_quotes_gpc()) {
-			$description    = stripslashes($description);
-			$tags           = stripslashes($tags);
+			$description = stripslashes($description);
+			$tags = stripslashes($tags);
 		}
-		 
-		$description    = trim(mysql_real_escape_string($description));
-		$tags           = trim(mysql_real_escape_string($tags));
+
+		$description = trim(mysql_real_escape_string($description));
+		$tags = trim(mysql_real_escape_string($tags));
 
 		//print "description: $description";
 		//writeToLog("description: $description");
@@ -83,40 +85,44 @@ class annotationsDB {
 
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (addAnnotation): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (addAnnotation): ' . mysql_error());
 
 		$insertID = mysql_insert_id($this->link);
 
 		return $insertID;
 	}
 
-        function addFeedback()
-        {
-            
-        } 
+	function addFeedback()
+	{
 
-        
+	}
 
-	function updateAnnotationViewCount($annotationID, $userID) {
+
+
+	function updateAnnotationViewCount($annotationID, $userID)
+	{
 		$query = "INSERT INTO annotationViewedBy VALUES (NULL, $annotationID, $userID, NULL)";
 		$result = mysql_query($query, $this->link);
 
 		//print "query: $query";
-		if (!$result) die('Invalid query (updateAnnotationViewCount): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (updateAnnotationViewCount): ' . mysql_error());
 	}
 
-	function updateAnnotation($annotationID, $videoID="0", $userID="0", $userName="bob", $startTime, $endTime, $description, $tags="no tags yet", $isPrivate=0, $isDeleted=0, $videoAnnotationID="NULL", $parentID)
+	function updateAnnotation($annotationID, $videoID = "0", $userID = "0", $userName = "bob", $startTime, $endTime, $description, $tags = "no tags yet", $isPrivate = 0, $isDeleted = 0, $videoAnnotationID = "NULL", $parentID)
 	{
 		// check ownership
-		if (! $this->userOwnsAnnotation($annotationID, $userID)) return ("user does not own this annotation? userID " . $userID . " annotationID " . $annotationID);
+		if (!$this->userOwnsAnnotation($annotationID, $userID))
+			return ("user does not own this annotation? userID " . $userID . " annotationID " . $annotationID);
 
 		if (get_magic_quotes_gpc() != 0) {
-			$description    = stripslashes($description);
-			$tags           = stripslashes($tags);
+			$description = stripslashes($description);
+			$tags = stripslashes($tags);
 		}
 
-		$description    = trim(mysql_real_escape_string($description));
-		$tags           = trim(mysql_real_escape_string($tags));
+		$description = trim(mysql_real_escape_string($description));
+		$tags = trim(mysql_real_escape_string($tags));
 
 		//$query = "UPDATE annotations SET description='$description', tags='$tags' WHERE annotation_id = $annotationID";
 		// create a new annotation and this->link it to it's ancestor
@@ -128,12 +134,14 @@ class annotationsDB {
 		$query = "UPDATE annotations SET is_deleted=1, child_id=$newAnnotationID WHERE annotation_id=$annotationID";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (updateAnnotation): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (updateAnnotation): ' . mysql_error());
 
 		//return $description;
 	}
 
-	function userOwnsAnnotation($annotationID, $userID) {
+	function userOwnsAnnotation($annotationID, $userID)
+	{
 		$query = "SELECT user_id FROM annotations WHERE annotation_id=$annotationID AND user_id=$userID";
 		$result = mysql_query($query, $this->link);
 		$rowCnt = mysql_num_rows($result);
@@ -146,36 +154,41 @@ class annotationsDB {
 		}
 	}
 
-	function deleteAnnotation($annotationID, $userID=SYSADMIN)
+	function deleteAnnotation($annotationID, $userID = SYSADMIN)
 	{
 		// this does not really delete an annotation as we need to keep them
 		// in order to do analysis
 
 		// check ownership, skip but only for the admin tool
 		if ($userID != SYSADMIN) {
-			if (! $this->userOwnsAnnotation($annotationID, $userID)) return;
+			if (!$this->userOwnsAnnotation($annotationID, $userID))
+				return;
 		}
 
 		$query = "UPDATE annotations SET is_deleted=1 WHERE annotation_id=$annotationID";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (deleteAnnotation): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (deleteAnnotation): ' . mysql_error());
 		return $result;
 	}
 
-	function getStudentAnnotations($videoID=null, $userID, $flagMode=false) {
+	function getStudentAnnotations($videoID = null, $userID, $flagMode = false)
+	{
 		return $this->getAnnotations($videoID, $userID, $flagMode, STUDENTS);
 	}
 
-	function getInstructorAndTAAnnotations($videoID=null, $userID, $flagMode=false) {
+	function getInstructorAndTAAnnotations($videoID = null, $userID, $flagMode = false)
+	{
 		return $this->getAnnotations($videoID, $userID, $flagMode, INSTRUCTORS_AND_TAS);
 	}
 
-	function getMyAnnotations($videoID=null, $userID, $flagMode=false) {
+	function getMyAnnotations($videoID = null, $userID, $flagMode = false)
+	{
 		return $this->getAnnotations($videoID, $userID, $flagMode, MINE);
 	}
 
-	function getAnnotations($videoID=null, $userID=null, $annotationMode=true, $viewMode)
+	function getAnnotations($videoID = null, $userID = null, $annotationMode = true, $viewMode)
 	{
 		$videoID = (string) $videoID;
 
@@ -197,27 +210,28 @@ class annotationsDB {
 				break;
 		}
 		/*
-			if ($annotationMode) {
-				$query .= " AND start_time is NOT NULL";
-			} else {
-				$query .= " AND start_time is NULL";
-			}
+		if ($annotationMode) {
+		$query .= " AND start_time is NOT NULL";
+		} else {
+		$query .= " AND start_time is NULL";
+		}
 		*/
 		$query .= " ORDER BY creation_date ASC";
 
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getAnnotations() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getAnnotations() ) ' . mysql_error());
 
 		while ($row = mysql_fetch_assoc($result)) {
 
 			$lineBreakRestoredDescription = str_replace(array("\\r\\n", "\\n"), PHP_EOL, trim($row['description']));
 			$lineBreakRestoredTags = str_replace(array("\\r\\n", "\\n"), PHP_EOL, trim($row['tags']));
-			 
-			$row['description']         = htmlentities(stripslashes($lineBreakRestoredDescription), ENT_NOQUOTES, "UTF-8");
-			$row['tags']                = htmlentities(stripslashes($lineBreakRestoredTags), ENT_NOQUOTES, "UTF-8");
 
-			users::isInstructorOrTA($row['user_id']) ? $isInstructorTA=true : $isInstructorTA=false;
+			$row['description'] = htmlentities(stripslashes($lineBreakRestoredDescription), ENT_NOQUOTES, "UTF-8");
+			$row['tags'] = htmlentities(stripslashes($lineBreakRestoredTags), ENT_NOQUOTES, "UTF-8");
+
+			users::isInstructorOrTA($row['user_id']) ? $isInstructorTA = true : $isInstructorTA = false;
 
 			if ($viewMode == INSTRUCTORS_AND_TAS) {
 				//print "query(INSTRUCTORS): $query<br />";
@@ -227,13 +241,13 @@ class annotationsDB {
 				}
 			} elseif ($viewMode == STUDENTS) {
 				//print "query(STUDENTS): $query<br />";
-				if (! $isInstructorTA) {
+				if (!$isInstructorTA) {
 					$row['is_student'] = 1;
 					$annotations[] = $row;
 				}
 			} else {
 				//print "query(MINE): $query<br />";
-				$row['is_student'] = (int) ! $isInstructorTA;
+				$row['is_student'] = (int) !$isInstructorTA;
 				// $viewMode == MINE
 				$annotations[] = $row;
 			}
@@ -261,42 +275,33 @@ class annotationsDB {
 
 
 /*
- // test driver
+// test driver
 $annotationIDs = array();
 $annotations = new annotationsDB();
-
 $annotations->truncateTable();
 $annotationsCount = $annotations->countAnnotations();
 print "There are $annotationsCount annotation(s) in total.<br /><br />";
-
 $startTime = 12.823;
-
 $endTime   = $startTime + rand(1, 15);
 $description = "this vid sucks!";
 print '$annotations->addAnnotation()<br />';
 $annotations->addAnnotation($videoID=0, $userID=0, $userName="bob", $startTime, $endTime, $description, $tags="no tags yet");
 $annotationIDs[] = mysql_insert_id();
-
 $endTime   = $startTime + rand(1, 15);
 $description = "I found this part interesting.";
 print '$annotations->addAnnotation()<br />';
 $annotations->addAnnotation($videoID=0, $userID=0, $userName="bob", $startTime, $endTime, $description, $tags="no tags yet");
-
 print '$annotations->updateAnnotation()<br />';
 $parent_id = 44;
 $annotations->updateAnnotation($parent_id, $videoID=0, $userID=0, $userName="bob", $startTime, $endTime, $description, $tags="no tags");
 $annotationIDs[] = mysql_insert_id();
-
 $annotation_id = array_pop($annotationIDs);
 $data = $annotations->getAnnotations("0", "0");
-
 print '$annotations->getAnnotations("0", "0")<br />';
 print_r($data);
 print "<br /><br />There are " . $annotations->countAnnotations() . " annotations in total.<br />";
-
 print '$annotations->deleteAnnotation($annotation_id)<br />';
 $annotations->deleteAnnotation($annotation_id);
-
 print "There are " . $annotations->countAnnotations() . " annotations in total.<br />";
 $annotations->close();
 */

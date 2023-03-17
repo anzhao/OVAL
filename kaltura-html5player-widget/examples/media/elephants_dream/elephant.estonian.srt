@@ -1,18 +1,18 @@
 1
 00:00:15,042 --> 00:00:18,042
-Ja… Ja vasakul võime näha...
+Jaï¿½ Ja vasakul vï¿½ime nï¿½ha...
 
 2
 00:00:18,750 --> 00:00:20,333
-Paremal võime näha...
+Paremal vï¿½ime nï¿½ha...
 
 3
 00:00:20,417 --> 00:00:21,917
-...peade-tükeldajaid.
+...peade-tï¿½keldajaid.
 
 4
 00:00:22,000 --> 00:00:24,625
-Kõik on ohutu.|Täiesti ohutu.
+Kï¿½ik on ohutu.|Tï¿½iesti ohutu.
 
 5
 00:00:26,333 --> 00:00:27,333
@@ -32,23 +32,23 @@ Ma arvan et mitte...|aga sina?
 
 9
 00:00:55,625 --> 00:00:57,125
-Minuga on kõik korras.
+Minuga on kï¿½ik korras.
 
 10
 00:00:57,583 --> 00:01:01,667
-Tõuse püsti.|Emo, siin ei ole ohutu.
+Tï¿½use pï¿½sti.|Emo, siin ei ole ohutu.
 
 11
 00:01:02,208 --> 00:01:03,667
-Lähme.
+Lï¿½hme.
 
 12
 00:01:03,750 --> 00:01:05,750
-Mis järgmiseks?
+Mis jï¿½rgmiseks?
 
 13
 00:01:05,875 --> 00:01:07,875
-Küll näed!
+Kï¿½ll nï¿½ed!
 
 14
 00:01:17,250 --> 00:01:19,042
@@ -56,7 +56,7 @@ Emo.|Siiapoole.
 
 15
 00:01:34,792 --> 00:01:35,792
-Järgne mulle!
+Jï¿½rgne mulle!
 
 16
 00:02:11,583 --> 00:02:12,792
@@ -64,7 +64,7 @@ Kiirusta Emo.
 
 17
 00:02:48,375 --> 00:02:50,083
-Sa ei pane tähele!
+Sa ei pane tï¿½hele!
 
 18
 00:02:50,750 --> 00:02:54,500
@@ -72,23 +72,23 @@ Ma tahan lihtsalt vastata...|...telefonile.
 
 19
 00:02:55,000 --> 00:02:58,208
-Emo, vaata,|tähendab kuula.
+Emo, vaata,|tï¿½hendab kuula.
 
 20
 00:02:59,750 --> 00:03:02,292
-Sa pead õppima kuulama.
+Sa pead ï¿½ppima kuulama.
 
 21
 00:03:03,625 --> 00:03:05,125
-See ei ole mingi mäng.
+See ei ole mingi mï¿½ng.
 
 22
 00:03:06,167 --> 00:03:10,417
-Sina, meie, võime siin kergesti surma saada.
+Sina, meie, vï¿½ime siin kergesti surma saada.
 
 23
 00:03:10,208 --> 00:03:14,125
-Kuula,|kuula masina hääli.
+Kuula,|kuula masina hï¿½ï¿½li.
 
 24
 00:03:18,333 --> 00:03:20,417
@@ -96,23 +96,23 @@ Kuula oma hingamist.
 
 25
 00:04:27,208 --> 00:04:29,250
-Kas sa sellest kunagi ära ei tüdine?
+Kas sa sellest kunagi ï¿½ra ei tï¿½dine?
 
 26
 00:04:29,583 --> 00:04:31,083
-Tüdine?!?
+Tï¿½dine?!?
 
 27
 00:04:31,750 --> 00:04:34,667
-See masin on kui kellavärk
+See masin on kui kellavï¿½rk
 
 28
 00:04:35,500 --> 00:04:37,708
-Väike nihe paigast ära ja...
+Vï¿½ike nihe paigast ï¿½ra ja...
 
 29
 00:04:37,833 --> 00:04:39,792
-...ja sa oled lihtsalt lihahunnik põrandal.
+...ja sa oled lihtsalt lihahunnik pï¿½randal.
 
 30
 00:04:41,042 --> 00:04:42,375
@@ -136,7 +136,7 @@ Emo, sulge oma silmad.
 
 35
 00:05:44,917 --> 00:05:46,583
-Miks?|- Nüüd!
+Miks?|- Nï¿½ï¿½d!
 
 36
 00:05:53,750 --> 00:05:56,042
@@ -144,11 +144,11 @@ Hea.
 
 37
 00:05:59,542 --> 00:06:02,792
-Mida sa näed endast vasakul?
+Mida sa nï¿½ed endast vasakul?
 
 38
 00:06:04,417 --> 00:06:06,000
-Mitte midagi.|- Kas tõesti?
+Mitte midagi.|- Kas tï¿½esti?
 
 39
 00:06:06,333 --> 00:06:07,917
@@ -156,11 +156,11 @@ Mitte kui midagi
 
 40
 00:06:08,042 --> 00:06:12,417
-Ja endast paremal,|mida sa näed endast paremal?
+Ja endast paremal,|mida sa nï¿½ed endast paremal?
 
 41
 00:06:13,875 --> 00:06:16,917
-Seda sama Proog, täpselt seda sama...
+Seda sama Proog, tï¿½pselt seda sama...
 
 42
 00:06:17,083 --> 00:06:18,583
@@ -172,7 +172,7 @@ Kuula Proog! Kas sa kuuled seda!
 
 44
 00:06:43,625 --> 00:06:45,042
-Kas me siit võime minna?
+Kas me siit vï¿½ime minna?
 
 45
 00:06:45,208 --> 00:06:48,042
@@ -184,7 +184,7 @@ Aga...|- Usalda mind, see pole ohutu.
 
 47
 00:06:53,292 --> 00:06:54,792
-Võibolla ma võiksin...
+Vï¿½ibolla ma vï¿½iksin...
 
 48
 00:06:54,833 --> 00:06:56,333
@@ -196,7 +196,7 @@ EI!
 
 50
 00:07:00,875 --> 00:07:03,750
-On veel küsimusi, Emo?
+On veel kï¿½simusi, Emo?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -216,23 +216,23 @@ Emo...
 
 55
 00:07:14,500 --> 00:07:18,500
-...miks sa ei näe|selle koha ilu?
+...miks sa ei nï¿½e|selle koha ilu?
 
 56
 00:07:18,833 --> 00:07:20,750
-See kuidas kõik töötab.
+See kuidas kï¿½ik tï¿½ï¿½tab.
 
 57
 00:07:20,875 --> 00:07:24,000
-Kui täiuslik see on.
+Kui tï¿½iuslik see on.
 
 58
 00:07:24,083 --> 00:07:27,417
-Ei, Proog, ma ei näe.
+Ei, Proog, ma ei nï¿½e.
 
 59
 00:07:27,542 --> 00:07:30,333
-Ma ei näe, sest siin ei ole midagi.
+Ma ei nï¿½e, sest siin ei ole midagi.
 
 60
 00:07:31,500 --> 00:07:35,333
@@ -240,7 +240,7 @@ Ja miks peaksin oma elu usaldama|millegile mida ei ole olemas?
 
 61
 00:07:35,583 --> 00:07:37,125
-Kas oskad mulle seda öelda?
+Kas oskad mulle seda ï¿½elda?
 
 62
 00:07:37,500 --> 00:07:39,167
@@ -260,19 +260,19 @@ Hoia minust eemale.
 
 66
 00:07:52,583 --> 00:07:55,083
-Ei! Emo! See on lõks!
+Ei! Emo! See on lï¿½ks!
 
 67
 00:07:55,833 --> 00:07:57,167
-See on lõks.
+See on lï¿½ks.
 
 68
 00:07:57,208 --> 00:08:01,750
-Vasakul pool võid näha|Babyloni rippaedu!
+Vasakul pool vï¿½id nï¿½ha|Babyloni rippaedu!
 
 69
 00:08:02,250 --> 00:08:04,292
-Kuidas on see lõks?
+Kuidas on see lï¿½ks?
 
 70
 00:08:05,458 --> 00:08:07,125
@@ -280,7 +280,7 @@ Ei, Emo.
 
 71
 00:08:09,417 --> 00:08:12,792
-Paremal pool võid näha...|...arva mida...
+Paremal pool vï¿½id nï¿½ha...|...arva mida...
 
 72
 00:08:13,000 --> 00:08:14,750
@@ -300,7 +300,7 @@ See on seal..
 
 76
 00:08:53,208 --> 00:08:55,500
-Ma ütlen sulle,|Emo...
+Ma ï¿½tlen sulle,|Emo...
 
 77
 00:08:57,333 --> 00:09:00,000

@@ -3,45 +3,41 @@
 This file is part of the Kaltura Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
-
 Copyright (C) 2006-2008 Kaltura Inc.
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
 published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Affero General Public License for more details.
-
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-class KalturaClientBase 
+class KalturaClientBase
 {
 	const KALTURA_API_VERSION = "0.7";
 	const KALTURA_SERVICE_FORMAT_JSON = 1;
-	const KALTURA_SERVICE_FORMAT_XML  = 2;
-	const KALTURA_SERVICE_FORMAT_PHP  = 3;
+	const KALTURA_SERVICE_FORMAT_XML = 2;
+	const KALTURA_SERVICE_FORMAT_PHP = 3;
 
 	/**
 	 * @var KalturaConfiguration
 	 */
 	private $config;
-	
+
 	/**
 	 * @var string
 	 */
 	private $ks;
-	
+
 	/**
 	 * @var boolean
 	 */
 	private $shouldLog = false;
-	
+
 	/**
 	 * Kaltura client constuctor, expecting configuration object 
 	 *
@@ -50,78 +46,71 @@ class KalturaClientBase
 	public function __construct(KalturaConfiguration $config)
 	{
 		$this->config = $config;
-		
+
 		$logger = $this->config->getLogger();
-		if ($logger instanceof IKalturaLogger)
-		{
-			$this->shouldLog = true;	
+		if ($logger instanceof IKalturaLogger) {
+			$this->shouldLog = true;
 		}
 	}
-		
+
 	public function hit($method, KalturaSessionUser $session_user, $params)
 	{
 		$start_time = microtime(true);
-		
+
 		$this->log("service url: [" . $this->config->serviceUrl . "]");
-		$this->log("trying to call method: [" . $method . "] for user id: [" . $session_user->userId . "] using session: [" .$this->ks . "]");
-		
+		$this->log("trying to call method: [" . $method . "] for user id: [" . $session_user->userId . "] using session: [" . $this->ks . "]");
+
 		// append the basic params
-		$params["kaltura_api_version"] 	= self::KALTURA_API_VERSION;
-		$params["partner_id"] 			= $this->config->partnerId;
-		$params["subp_id"] 				= $this->config->subPartnerId;
-		$params["format"] 				= $this->config->format;
-		$params["uid"] 					= $session_user->userId;
+		$params["kaltura_api_version"] = self::KALTURA_API_VERSION;
+		$params["partner_id"] = $this->config->partnerId;
+		$params["subp_id"] = $this->config->subPartnerId;
+		$params["format"] = $this->config->format;
+		$params["uid"] = $session_user->userId;
 		$this->addOptionalParam($params, "user_name", $session_user->screenName);
 		$this->addOptionalParam($params, "ks", $this->ks);
-		
+
 		$url = $this->config->serviceUrl . "/index.php/partnerservices2/" . $method;
 		$this->log("full reqeust url: [" . $url . "]");
-		
+
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_USERAGENT, "");
 		curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-		
+
 		$signature = $this->signature($params);
 		$params["kalsig"] = $signature;
-		
+
 		$curl_result = curl_exec($ch);
-		
+
 		$curl_error = curl_error($ch);
-		
-		if ($curl_error)
-		{
+
+		if ($curl_error) {
 			// TODO: add error code?
 			$result["error"] = array($curl_error);
-		}
-		else 
-		{
+		} else {
 			$this->log("result (serialized): " . $curl_result);
-			
-			if ($this->config->format == self::KALTURA_SERVICE_FORMAT_PHP)
-			{
+
+			if ($this->config->format == self::KALTURA_SERVICE_FORMAT_PHP) {
 				$result = @unserialize($curl_result);
 
 				if (!$result) {
 					$result["result"] = null;
-					 // TODO: add error code?
+					// TODO: add error code?
 					$result["error"] = array("failed to serialize server result");
 				}
 				$dump = print_r($result, true);
 				$this->log("result (object dump): " . $dump);
-			}
-			else
-			{
+			} else {
 				throw new Exception("unsupported format");
 			}
 		}
-		
-		$end_time = microtime (true);
-		
+
+		$end_time = microtime(true);
+
 		$this->log("execution time for method [" . $method . "]: [" . ($end_time - $start_time) . "]");
-		
+
 		return $result;
 	}
 
@@ -132,36 +121,34 @@ class KalturaClientBase
 		$this->ks = @$result["result"]["ks"];
 		return $result;
 	}
-	
+
 	private function signature($params)
 	{
 		ksort($params);
 		$str = "";
-		foreach ($params as $k => $v)
-		{
-			$str .= $k.$v;
+		foreach ($params as $k => $v) {
+			$str .= $k . $v;
 		}
 		return md5($str);
 	}
-		
+
 	public function getKs()
 	{
 		return $this->ks;
 	}
-	
+
 	public function setKs($ks)
 	{
 		$this->ks = $ks;
 	}
-	
+
 	protected function addOptionalParam(&$params, $paramName, $paramValue)
 	{
-		if ($paramValue !== null)
-		{
+		if ($paramValue !== null) {
 			$params[$paramName] = $paramValue;
 		}
 	}
-	
+
 	protected function log($msg)
 	{
 		if ($this->shouldLog)
@@ -179,11 +166,11 @@ class KalturaConfiguration
 {
 	private $logger;
 
-	public $serviceUrl    = "http://www.kaltura.com";
-	public $format        = KalturaClient::KALTURA_SERVICE_FORMAT_PHP;
-	public $partnerId     = null;
-	public $subPartnerId  = null;
-	
+	public $serviceUrl = "http://www.kaltura.com";
+	public $format = KalturaClient::KALTURA_SERVICE_FORMAT_PHP;
+	public $partnerId = null;
+	public $subPartnerId = null;
+
 	/**
 	 * Constructs new kaltura configuration object, expecting partner id & sub partner id
 	 *
@@ -192,10 +179,10 @@ class KalturaConfiguration
 	 */
 	public function __construct($partnerId, $subPartnerId)
 	{
-		$this->partnerId 	= $partnerId;
+		$this->partnerId = $partnerId;
 		$this->subPartnerId = $subPartnerId;
 	}
-	
+
 	/**
 	 * Set logger to get kaltura client debug logs
 	 *
@@ -205,7 +192,7 @@ class KalturaConfiguration
 	{
 		$this->logger = $log;
 	}
-	
+
 	/**
 	 * Gets the logger (Internal client use)
 	 *
@@ -221,9 +208,9 @@ class KalturaConfiguration
  * Implement to get kaltura client logs
  *
  */
-interface IKalturaLogger 
+interface IKalturaLogger
 {
-	function log($msg); 
+	function log($msg);
 }
 
 

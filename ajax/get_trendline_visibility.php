@@ -30,9 +30,9 @@ require_once(dirname(__FILE__) . "/../database/users.php");
 
 
 startSession();
-$userID     = $_SESSION['user_id'];
+$userID = $_SESSION['user_id'];
 
-$videoID    = $_GET['video_id'];
+$videoID = $_GET['video_id'];
 
 // strip out hash
 $videoID = str_replace("#", "", $videoID);

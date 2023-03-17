@@ -626,7 +626,7 @@ class KalturaAuditClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaAuditClientPlugin($client);
 		return self::$instance;
 	}
@@ -650,4 +650,3 @@ class KalturaAuditClientPlugin extends KalturaClientPlugin
 		return 'audit';
 	}
 }
-

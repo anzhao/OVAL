@@ -5,12 +5,15 @@
 	color: #FFF;
 	background-color: #000;
 }
+
 .k-player .ui-widget-content {
 	color: #999;
 }
-.k-player .ui-widget-content a{
+
+.k-player .ui-widget-content a {
 	color: #999;
 }
+
 /* large play button */
 .k-player .play-btn-large {
 	width: 70px;
@@ -20,30 +23,34 @@
 	cursor: pointer;
 	border: none;
 }
+
 @print {
 	.k-player .play-btn-large {
 		display: none;
 	}
 }
+
 /*.ui-state-default */
 .k-player .play-btn-large:hover {
 	background: url(images/ksprite.png) no-repeat 0px -377px;
 }
 
 /* control icons: */
-.k-player .ui-state-default .ui-icon,.k-player .ui-state-hover .ui-icon{
+.k-player .ui-state-default .ui-icon,
+.k-player .ui-state-hover .ui-icon {
 	background: transparent url(images/ksprite.png) no-repeat scroll 0 -48px;
 }
 
 .k-player .ui-state-default .ui-icon-arrow-4-diag {
 	background-position: 0 -32px;
 }
+
 /* fullscreen */
 .k-player .ui-state-hover .ui-icon-arrow-4-diag {
 	background-position: -16px -32px;
 }
 
-.k-player .ui-state-hover .ui-icon-volume-on{
+.k-player .ui-state-hover .ui-icon-volume-on {
 	background-position: -16px -48px;
 }
 
@@ -51,6 +58,7 @@
 .k-player .ui-state-default .ui-icon-comment {
 	background-position: 0px -65px;
 }
+
 .k-player .ui-state-hover .ui-icon-comment {
 	background-position: -17px -65px;
 }
@@ -72,7 +80,7 @@
 }
 
 .k-player .control-bar {
-	border:1px solid #c8c8c8;
+	border: 1px solid #c8c8c8;
 	border-top: 0px;
 	border-right: 0px;
 	height: 21px;
@@ -84,8 +92,7 @@
 }
 
 .k-player .play_head {
-	background: url("images/ksprite.png") repeat-x scroll 0 -350px
-		transparent;
+	background: url("images/ksprite.png") repeat-x scroll 0 -350px transparent;
 	display: inline;
 	float: left;
 	margin-left: 10px;
@@ -96,8 +103,7 @@
 }
 
 .k-player .play_head .ui-slider-handle {
-	background: url("images/ksprite.png") no-repeat scroll -67px -341px
-		transparent;
+	background: url("images/ksprite.png") no-repeat scroll -67px -341px transparent;
 	border: 1px solid #888888;
 	display: block;
 	height: 8px;
@@ -106,11 +112,13 @@
 	top: 0;
 	width: 8px;
 	cursor: pointer;
-	-moz-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
 }
+
 .k-player .ui-corner-all {
-	-moz-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
 }
+
 .k-player .time-disp {
 	border: medium none;
 	display: inline;
@@ -176,8 +184,7 @@
 }
 
 .k-player ul.k-menu-bar {
-	background: url("images/ksprite.png") no-repeat scroll -99px -104px
-		transparent;
+	background: url("images/ksprite.png") no-repeat scroll -99px -104px transparent;
 	bottom: 5px;
 	height: 128px;
 	list-style: none outside none;
@@ -197,8 +204,7 @@
 }
 
 .k-player .k-menu-bar li a {
-	background: url("images/ksprite.png") no-repeat scroll -51px -110px
-		transparent;
+	background: url("images/ksprite.png") no-repeat scroll -51px -110px transparent;
 	display: block;
 	height: 32px;
 	margin-left: 1px;
@@ -260,9 +266,7 @@
 	color: #fff;
 }
 
-.k-edit-screen div {
-
-}
+.k-edit-screen div {}
 
 .k-edit-screen a {
 	color: #7BB8FC;
@@ -273,7 +277,8 @@
 }
 
 
-.k-menu-screens h2, .k-menu-screens h3 {
+.k-menu-screens h2,
+.k-menu-screens h3 {
 	padding: 0 0 5px 1px;
 	clear: both;
 	font-size: 12px;
@@ -306,7 +311,8 @@
 	color: #BBB;
 }
 
-.k-menu-screens li a.active,.k-menu-screens li a:hover .active {
+.k-menu-screens li a.active,
+.k-menu-screens li a:hover .active {
 	background-position: -85px -247px;
 }
 
@@ -372,8 +378,7 @@
 
 .k-player .volume-slider .ui-slider-range {
 	-moz-border-radius: 0 0 0 0;
-	background: url("images/ksprite.png") repeat-x scroll -66px -306px
-		transparent;
+	background: url("images/ksprite.png") repeat-x scroll -66px -306px transparent;
 	height: 17px;
 	position: absolute;
 }
@@ -389,31 +394,33 @@
 }
 
 .k-player .credits_box {
-	background-attachment:scroll;
-	background-color:white;
-	background-image:none;
-	background-position:0 0;
-	bottom:30px;
-	left:15px;
-	position:absolute;
-	right:30px;
-	top:48px;
+	background-attachment: scroll;
+	background-color: white;
+	background-image: none;
+	background-position: 0 0;
+	bottom: 30px;
+	left: 15px;
+	position: absolute;
+	right: 30px;
+	top: 48px;
 }
-.k-player .credits_box a{
-	color:#666;
+
+.k-player .credits_box a {
+	color: #666;
 }
+
 .k-player .creditline img {
 	float: left;
 	width: 90px;
 	margin: 4px;
 }
 
-.k-player .k-attribution{
-	position:absolute;
+.k-player .k-attribution {
+	position: absolute;
 	bottom: 15px;
-	right : 30px;
+	right: 30px;
 	background: url("images/kaltura_open_source_video_platform.png");
-	width : 51px;
-	height : 12px;
+	width: 51px;
+	height: 12px;
 	cursor: pointer;
 }

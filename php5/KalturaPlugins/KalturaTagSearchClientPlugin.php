@@ -232,4 +232,3 @@ class KalturaTagSearchClientPlugin extends KalturaClientPlugin
 		return 'tagSearch';
 	}
 }
-

@@ -34,7 +34,8 @@ require_once("/var/www/config/clas/$configFolderName/db_config.php");
 
 //error_reporting(E_ALL);
 
-class users {
+class users
+{
 	private $link;
 
 	function users()
@@ -42,7 +43,8 @@ class users {
 		global $mysqlUser, $mysqlPassword, $database;
 
 		$this->link = mysql_connect('localhost', $mysqlUser, $mysqlPassword);
-		if (!$this->link) die('could not connect: ' . mysql_error());
+		if (!$this->link)
+			die('could not connect: ' . mysql_error());
 
 		mysql_select_db($database) or die(mysql_error());
 	}
@@ -53,7 +55,8 @@ class users {
 		$query = "SELECT * FROM users";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query ( getAuthorizedViewers() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getAuthorizedViewers() ) ' . mysql_error());
 
 		$users = null;
 		while ($row = mysql_fetch_assoc($result)) {
@@ -73,10 +76,11 @@ class users {
 
 		$query = "SELECT id FROM users WHERE hash_user_id LIKE '$hashUserID'";
 		#$query = "SELECT id FROM users WHERE first_name LIKE 'shane'";
-                // print "query:$query<br />";
+		// print "query:$query<br />";
 		$result = mysql_query($query, $this->link);
 		// echo mysql_errno($dbConn) . ": " . mysql_error($dbConn) . "<br />";
-		if (false == $result) die ("query failed");
+		if (false == $result)
+			die("query failed");
 
 		if (1 == mysql_num_rows($result)) {
 			$userID = mysql_result($result, 0);
@@ -87,45 +91,47 @@ class users {
 		return $userID;
 	}
 
-        function getByGN($givenName,$sn)
-        {
+	function getByGN($givenName, $sn)
+	{
 
 
 
-                $query = "SELECT id FROM users WHERE first_name LIKE '$givenName' AND last_name LIKE '$sn'";
-                // print "query:$query<br />";
-                $result = mysql_query($query, $this->link);
-                // echo mysql_errno($dbConn) . ": " . mysql_error($dbConn) . "<br />";
-                if (false == $result) die ("query failed");
+		$query = "SELECT id FROM users WHERE first_name LIKE '$givenName' AND last_name LIKE '$sn'";
+		// print "query:$query<br />";
+		$result = mysql_query($query, $this->link);
+		// echo mysql_errno($dbConn) . ": " . mysql_error($dbConn) . "<br />";
+		if (false == $result)
+			die("query failed");
 
-                if (1 == mysql_num_rows($result)) {
-                        $userID = mysql_result($result, 0);
-                } else {
-                        $userID = null;
-                }
+		if (1 == mysql_num_rows($result)) {
+			$userID = mysql_result($result, 0);
+		} else {
+			$userID = null;
+		}
 
-                return $userID;
-
-
-        }
+		return $userID;
 
 
+	}
 
-        function getByMail($mail)
-        {
-              $query = "SELECT id FROM users WHERE mail = '$mail'";
-              $result = mysql_query($query, $this->link);
-              if (false == $result) die ("query failed");
 
-              if(1 == mysql_num_rows($result)) {
-                      $userID = mysql_result($result, 0);
-              } else {
-                      $userID = null;
-              }
-            
-              return $userID;
 
-        }
+	function getByMail($mail)
+	{
+		$query = "SELECT id FROM users WHERE mail = '$mail'";
+		$result = mysql_query($query, $this->link);
+		if (false == $result)
+			die("query failed");
+
+		if (1 == mysql_num_rows($result)) {
+			$userID = mysql_result($result, 0);
+		} else {
+			$userID = null;
+		}
+
+		return $userID;
+
+	}
 
 
 
@@ -141,14 +147,15 @@ class users {
 		$query = "SELECT * FROM users WHERE id IN $users";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query ( getAuthorizedViewers() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getAuthorizedViewers() ) ' . mysql_error());
 
 		$users = null;
 		while ($row = mysql_fetch_assoc($result)) {
 			$users[] = $row;
 			// print_r($row);
 		}
-		 
+
 		// print_r($userIDs);
 		// print_r($users);
 		return $users;
@@ -159,7 +166,8 @@ class users {
 		$query = "SELECT * FROM userInterfaceConfigs WHERE user_id='$userID'";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query ( getUI() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getUI() ) ' . mysql_error());
 
 		$row = mysql_fetch_assoc($result);
 
@@ -167,15 +175,15 @@ class users {
 
 		if (false == $row) {
 			// no results, set params to default values
-			$config['annotation_mode']      = "annotation";
-			$config['annotations_enabled']  = "yes";
-			$config['trendline_visility']   = "by-default";
-			$config['n']                    = 0;
+			$config['annotation_mode'] = "annotation";
+			$config['annotations_enabled'] = "yes";
+			$config['trendline_visility'] = "by-default";
+			$config['n'] = 0;
 		} else {
-			$config['annotation_mode']      = $row['annotation_mode'];
-			$config['annotations_enabled']  = $row['annotations_enabled'];
+			$config['annotation_mode'] = $row['annotation_mode'];
+			$config['annotations_enabled'] = $row['annotations_enabled'];
 			$config['trendline_visibility'] = $row['trendline_visibility'];
-			$config['n']                    = $row['n'];
+			$config['n'] = $row['n'];
 		}
 		// print_r($config);
 		return $config;
@@ -184,8 +192,8 @@ class users {
 	function setName($firstName, $lastName, $userID)
 	{
 		// name data comes from CWL/SHIB, but santize anyways
-		$lastName   = mysql_real_escape_string($lastName);
-		$firstName  = mysql_real_escape_string($firstName);
+		$lastName = mysql_real_escape_string($lastName);
+		$firstName = mysql_real_escape_string($firstName);
 
 		$query = <<<EOT
 UPDATE users SET first_name='$firstName', last_name='$lastName' WHERE id=$userID
@@ -195,7 +203,7 @@ EOT;
 		$result = mysql_query($query, $this->link);
 	}
 
-	function setUI($userID, $annotationMode, $annotationsEnabled, $trendlineVisibility, $N=0)
+	function setUI($userID, $annotationMode, $annotationsEnabled, $trendlineVisibility, $N = 0)
 	{
 		$query = "SELECT * FROM userInterfaceConfigs WHERE user_id=$userID";
 		$result = mysql_query($query, $this->link);
@@ -210,7 +218,8 @@ EOT;
 		$result = mysql_query($query, $this->link);
 
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query ( setUI() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( setUI() ) ' . mysql_error());
 	}
 
 	function trendlineVisible($userID, $videoID)
@@ -223,11 +232,11 @@ EOT;
 		// $users->close();
 		// print_r($uiConfig);
 
-		$trendlineVisibility    = $uiConfig['trendline_visibility'];
-		$n                      = $uiConfig['n'];
+		$trendlineVisibility = $uiConfig['trendline_visibility'];
+		$n = $uiConfig['n'];
 
-		$media  = new media();
-		$stats  = $media->getViewerStatistics($userID, $videoID);
+		$media = new media();
+		$stats = $media->getViewerStatistics($userID, $videoID);
 		$media->close();
 
 		switch ($trendlineVisibility) {
@@ -236,15 +245,17 @@ EOT;
 				break;
 			case AFTER_N_DAYS:
 				// check timestamp
-				$firstViewTime  = strtotime($stats['first_view']);
-				$currentTime    = time();
-				$nDays          = $n * (60 * 60 * 24);
-				if ($currentTime <= $firstViewTime + $nDays) $allowAccess = true;
+				$firstViewTime = strtotime($stats['first_view']);
+				$currentTime = time();
+				$nDays = $n * (60 * 60 * 24);
+				if ($currentTime <= $firstViewTime + $nDays)
+					$allowAccess = true;
 				sendEmail("stats: {$stats['first_view']}\nif ($currentTime <= $firstViewTime + $nDays)", "trendlineVis");
 				break;
 			case AFTER_N_VIEWS:
 				// check number of views
-				if ($stats['total_views'] >= $n) $allowAccess = true;
+				if ($stats['total_views'] >= $n)
+					$allowAccess = true;
 				sendEmail("({$stats['total_views']} >= $n)", "trendlineVis");
 				break;
 		}
@@ -258,13 +269,14 @@ EOT;
 		$query = "SELECT * FROM groups, groupOwners WHERE groups.id=groupOwners.group_id AND user_id=$ownerID";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query (getGroupsByOwner): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (getGroupsByOwner): ' . mysql_error());
 
 		$groups = array();
 
 		while ($row = mysql_fetch_assoc($result)) {
-			$groupID    = $row['group_id'];
-			$name  = $row['name'];
+			$groupID = $row['group_id'];
+			$name = $row['name'];
 			$groups[$groupID] = $name;
 		}
 		// print_r($userIDs);
@@ -273,18 +285,20 @@ EOT;
 
 	}
 
-	function getMyGroups($ID, $classID=NULL)
+	function getMyGroups($ID, $classID = NULL)
 	{
 		$query = "SELECT * FROM groupMembers WHERE user_id=$ID UNION SELECT * FROM groupOwners WHERE user_id=$ID";
 
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (getMyGroups): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (getMyGroups): ' . mysql_error());
 
-		while ($row = mysql_fetch_assoc($result)) $groupIDs[] = $row['group_id'];
+		while ($row = mysql_fetch_assoc($result))
+			$groupIDs[] = $row['group_id'];
 
 		$query = "SELECT * FROM groups WHERE id IN (" . implode(",", $groupIDs) . ")";
-		if (! is_null($classID)) {
+		if (!is_null($classID)) {
 			$query .= " AND class_id=$classID";
 		}
 		//print "query: $query";
@@ -292,7 +306,7 @@ EOT;
 
 		while ($row = mysql_fetch_assoc($result)) {
 			$groupID = $row['id'];
-			$name    = $row['name'];
+			$name = $row['name'];
 
 			$groups[$groupID] = $name;
 		}
@@ -305,13 +319,14 @@ EOT;
 		$query = "SELECT * FROM groups, groupOwners WHERE groups.id=groupOwners.group_id AND user_id=$ownerID AND class_id=$classID";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (getGroupsByClassAndOwner): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (getGroupsByClassAndOwner): ' . mysql_error());
 
 		$groups = array();
 
 		while ($row = mysql_fetch_assoc($result)) {
-			$groupID    = $row['group_id'];
-			$name       = $row['name'];
+			$groupID = $row['group_id'];
+			$name = $row['name'];
 
 			$groups[$groupID] = $name;
 		}
@@ -325,13 +340,14 @@ EOT;
 		$query = "SELECT * FROM groups WHERE class_id=$classID";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query (getGroupsByClassID): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (getGroupsByClassID): ' . mysql_error());
 
 		$groups = array();
 
 		while ($row = mysql_fetch_assoc($result)) {
-			$groupID    = $row['id'];
-			$name       = $row['name'];
+			$groupID = $row['id'];
+			$name = $row['name'];
 
 			$groups[$groupID] = $name;
 		}
@@ -351,7 +367,8 @@ EOT;
 		// print "query1: $query<br />";
 		mysql_query("LOCK TABLES groups WRITE");
 		$result = mysql_query($query, $this->link);
-		if (!$result) die('Invalid query (createGroup): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (createGroup): ' . mysql_error());
 		// get 'id' of newly created group
 		$groupID = mysql_insert_id();
 		mysql_query("UNLOCK TABLES");
@@ -363,17 +380,19 @@ EOT;
 		foreach ($groupOwners as $owner) {
 			$query = "INSERT INTO groupOwners VALUES ($groupID, $owner)";
 			$result = mysql_query($query, $this->link);
-				
+
 			//print "query2: $query<br />";
-			if (!$result) die('Invalid query (createGroup): ' . mysql_error());
+			if (!$result)
+				die('Invalid query (createGroup): ' . mysql_error());
 		}
 
-		if (! is_null($userIDs)) {
+		if (!is_null($userIDs)) {
 			foreach ($userIDs as $userID) {
 				$query = "INSERT INTO groupMembers VALUES ($groupID, $userID)";
 				$result = mysql_query($query, $this->link);
 				//print "query3: $query<br />";
-				if (!$result) die('Invalid query (createUserGroup): ' . mysql_error());
+				if (!$result)
+					die('Invalid query (createUserGroup): ' . mysql_error());
 			}
 		}
 
@@ -384,13 +403,14 @@ EOT;
 	{
 		//print "userIDs<br />";
 		//print_r($userIDs);
-		
+
 		if (count($userIDs) > 0) {
 			foreach ($userIDs as $userID) {
 				$query = "INSERT INTO groupMembers VALUES ($ID, $userID)";
 				$result = mysql_query($query, $this->link);
 				//print "query: $query<br />";
-				if (!$result) die('Invalid query (addMembersToGroup): ' . mysql_error());
+				if (!$result)
+					die('Invalid query (addMembersToGroup): ' . mysql_error());
 			}
 		}
 	}
@@ -402,7 +422,8 @@ EOT;
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
 
-		if (!$result) die('Invalid query (removeAllGroupMembers($ID)): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (removeAllGroupMembers($ID)): ' . mysql_error());
 	}
 
 	function userOwnsGroup($groupID, $userID)
@@ -431,7 +452,8 @@ EOT;
 		$query = "DELETE FROM groups WHERE id=$ID";
 		$result = mysql_query($query, $this->link);
 
-		if (!$result) die('Invalid query (deleteGroup): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (deleteGroup): ' . mysql_error());
 		return $result;
 	}
 
@@ -442,7 +464,8 @@ EOT;
 		$result = mysql_query($query, $this->link);
 
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getGroupMembers() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getGroupMembers() ) ' . mysql_error());
 
 
 		while ($row = mysql_fetch_assoc($result)) {
@@ -455,20 +478,23 @@ EOT;
 		return $groupMembers;
 	}
 
-	function getClassInstructorsAndTAs($groupID) {
+	function getClassInstructorsAndTAs($groupID)
+	{
 		$query = "SELECT class_id FROM groups WHERE id=$groupID";
 		// print "query: $query<br />";
 		$result = mysql_query($query, $this->link);
-		if (!$result) die('Invalid query ( getClassesInstructorsAndTAs() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassesInstructorsAndTAs() ) ' . mysql_error());
 
-		$row     = mysql_fetch_assoc($result);
+		$row = mysql_fetch_assoc($result);
 		// print_r($row);
 		$classID = $row['class_id'];
 		// print "classID:$classID<br />";
 		$query = "SELECT user_id FROM classInstructorsAndTAs WHERE class_id=$classID";
 		$result = mysql_query($query, $this->link);
 		// print "query: $query<br />";
-		if (!$result) die('Invalid query ( getClassesInstructorsAndTAs() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassesInstructorsAndTAs() ) ' . mysql_error());
 
 		while ($row = mysql_fetch_assoc($result)) {
 			$userIDs[] = $row['user_id'];
@@ -485,28 +511,29 @@ EOT;
 		// join this with classInstructorsAndTAs
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getClassesUserBelongsTo() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassesUserBelongsTo() ) ' . mysql_error());
 
 		while ($row = mysql_fetch_assoc($result)) {
-			$classList[] = array("ID"=>$row['id'], "name"=>$row['name']);
+			$classList[] = array("ID" => $row['id'], "name" => $row['name']);
 			//$classList[] = array("ID"=>$row['id'], "name"=>$row['name']);
 			//print_r($row);
 		}
 
 		// get all class IDs for given user
 		// left join
-		
-                //$query = "SELECT DISTINCT(c.id), c.name FROM classInstructorsAndTAs cITA LEFT JOIN class c ON cITA.class_id=c.id WHERE cITA.user_id=$userID";
-		
 
-                //$query = "SELECT class_id FROM classInstructorsAndTAs WHERE user_id=$userID";
+		//$query = "SELECT DISTINCT(c.id), c.name FROM classInstructorsAndTAs cITA LEFT JOIN class c ON cITA.class_id=c.id WHERE cITA.user_id=$userID";
+
+
+		//$query = "SELECT class_id FROM classInstructorsAndTAs WHERE user_id=$userID";
 		// join this with classInstructorsAndTAs
 		//$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
 		//if (!$result) die('Invalid query ( getClassesUserBelongsTo() ) ' . mysql_error());
 		//while ($row = mysql_fetch_assoc($result)) {
 		//	$classList[] = array("ID"=>$row['id'], "name"=>$row['name']);
-			//print_r($row);
+		//print_r($row);
 		//}
 
 		//print_r($classList);
@@ -519,7 +546,8 @@ EOT;
 		$query = "SELECT * FROM class";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getClassIDs() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassIDs() ) ' . mysql_error());
 
 		while ($row = mysql_fetch_assoc($result)) {
 			$classIDs[] = $row['id'];
@@ -535,10 +563,11 @@ EOT;
 		$query = "SELECT * FROM class WHERE id=$classID";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getClassName() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassName() ) ' . mysql_error());
 
-		$row    = mysql_fetch_assoc($result);
-		$name   = $row['name'];
+		$row = mysql_fetch_assoc($result);
+		$name = $row['name'];
 		//print_r($row);
 		//print_r($groupMembers);
 
@@ -551,9 +580,10 @@ EOT;
 
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( isClassInstructorOrTA() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( isClassInstructorOrTA() ) ' . mysql_error());
 		$numRows = mysql_num_rows($result);
-		 
+
 		// if user instructs or TAs any courses then that is his/her role
 		// currently user<->role is a one-to-one relation
 		if ($numRows > 0) {
@@ -563,26 +593,27 @@ EOT;
 		}
 	}
 
-	function getClassList($classID, $studentsOnly=true)
+	function getClassList($classID, $studentsOnly = true)
 	{
 		//print "getAnnotations() videoID:$videoID\n";
 
-		if (! $studentsOnly) {
+		if (!$studentsOnly) {
 			$query = "SELECT DISTINCT(cITA.user_id), u.first_name, u.last_name, is_instructor FROM classInstructorsAndTAs cITA, users u WHERE cITA.user_id=u.id AND cITA.class_id=$classID";
 			//$query = "SELECT * FROM classInstructorsAndTAs WHERE class_id=$classID";
 			// join this with classInstructorsAndTAs
 			$result = mysql_query($query, $this->link);
 			//print "query: $query<br />";
-			if (!$result) die('Invalid query ( getClassList() ) ' . mysql_error());
+			if (!$result)
+				die('Invalid query ( getClassList() ) ' . mysql_error());
 
 			while ($row = mysql_fetch_assoc($result)) {
-				$name           = $row['first_name'] . " " . $row['last_name'];
-				$isInstructor   = $row['is_instructor'];
+				$name = $row['first_name'] . " " . $row['last_name'];
+				$isInstructor = $row['is_instructor'];
 
 				if ($isInstructor) {
-					$classList[] =  array("ID"=>$row['user_id'], "name"=>$name, "is_instructor"=>true);
+					$classList[] = array("ID" => $row['user_id'], "name" => $name, "is_instructor" => true);
 				} else {
-					$classList[] =  array("ID"=>$row['user_id'], "name"=>$name, "is_ta"=>true);
+					$classList[] = array("ID" => $row['user_id'], "name" => $name, "is_ta" => true);
 
 				}
 				//print_r($row);
@@ -594,12 +625,13 @@ EOT;
 		// join this with classInstructorsAndTAs
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( getClassList() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( getClassList() ) ' . mysql_error());
 
 		while ($row = mysql_fetch_assoc($result)) {
 			$name = $row['first_name'] . " " . $row['last_name'];
 			//            $groupMembers[] = array('Username'=>$row['Username'], 'User_ID'=>$row['User_ID'], 'Email'=>$row['Email']);
-			$classList[] = array("ID"=>$row['user_id'], "name"=>$name, "is_student"=>true);
+			$classList[] = array("ID" => $row['user_id'], "name" => $name, "is_student" => true);
 			//print_r($row);
 		}
 
@@ -613,7 +645,8 @@ EOT;
 		$query = "INSERT IGNORE INTO classInstructorsAndTAs VALUES ($classID, $userID, $isInstructor)";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( setClassOwner() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( setClassOwner() ) ' . mysql_error());
 	}
 
 	function deleteClassOwner($userID, $classID)
@@ -621,28 +654,30 @@ EOT;
 		$query = "DELETE FROM classInstructorsAndTAs WHERE user_id=$userID AND class_id=$classID";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query ( setClassOwner() ) ' . mysql_error());
+		if (!$result)
+			die('Invalid query ( setClassOwner() ) ' . mysql_error());
 	}
 
-        function recordEvent()
-        {
-                if (event.data == YT.PlayerState.PLAYING) { 
-               
-                $query = "INSERT INTO videos VALUES ('28', 'test', 'test', 'test')";
-                $result = mysql_query($query, $this->link);
-                if (!$result) die('Invalid query (recordEvent): ' . mysql_error());
+	function recordEvent()
+	{
+		if (event . data == YT . PlayerState . PLAYING) {
 
-                }
-                else {
+			$query = "INSERT INTO videos VALUES ('28', 'test', 'test', 'test')";
+			$result = mysql_query($query, $this->link);
+			if (!$result)
+				die('Invalid query (recordEvent): ' . mysql_error());
 
-                $query = "INSERT INTO videos VALUES ('29', 'test1', 'test1', 'test1')";
-                $result = mysql_query($query, $this->link);
-                if (!$result) die('Invalid query (recordEvent): ' . mysql_error());
+		} else {
 
-                 
-                } 
-        }
-       
+			$query = "INSERT INTO videos VALUES ('29', 'test1', 'test1', 'test1')";
+			$result = mysql_query($query, $this->link);
+			if (!$result)
+				die('Invalid query (recordEvent): ' . mysql_error());
+
+
+		}
+	}
+
 
 	function recordLogin($userID)
 	{
@@ -650,7 +685,8 @@ EOT;
 		$query = "INSERT INTO loginSessions VALUES (NULL, $userID, NULL, NULL, NULL)";
 		$result = mysql_query($query, $this->link);
 		//print "query: $query<br />";
-		if (!$result) die('Invalid query (recordLogin): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (recordLogin): ' . mysql_error());
 	}
 
 	function recordLogout($userID)
@@ -659,20 +695,22 @@ EOT;
 		$query = "SELECT MAX(id) AS id, logout_time FROM loginSessions WHERE user_id=$userID";
 		//print "query: $query<br />";
 		$result = mysql_query($query, $this->link);
-		if (!$result) die('Invalid query (recordLogout): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (recordLogout): ' . mysql_error());
 		$row = mysql_fetch_assoc($result);
 		$ID = $row['id'];
 
 		// check that this row has not already been updated (this should not occur but check anyways)
 		//if (! is_null($row['logout_time'])) print "ERROR: userID:$userID (row id:$ID) has already logged out.";
 
-		$currentTime = date('Y-m-d H:i:s');// $dateTime->format('Y-m-d H:i:s');
+		$currentTime = date('Y-m-d H:i:s'); // $dateTime->format('Y-m-d H:i:s');
 		//print "date: $currentTime<br />";
 		$query = "UPDATE loginSessions SET logout_time='" . $currentTime . "' WHERE id=$ID AND user_id=$userID";
 		//print "query: $query<br />";
 		$result = mysql_query($query, $this->link);
 		//exit();
-		if (!$result) die('Invalid query (recordLogout): ' . mysql_error());
+		if (!$result)
+			die('Invalid query (recordLogout): ' . mysql_error());
 	}
 
 	function close()
@@ -684,25 +722,22 @@ EOT;
 }
 
 /*
- $annotationMode = array(
- 		"flag",
- 		"annotation"
- );
-$trendlineVisSettings = array(
-		"by-default",
-		"after-n-views",
-		"after-n-days"
+$annotationMode = array(
+"flag",
+"annotation"
 );
-
+$trendlineVisSettings = array(
+"by-default",
+"after-n-views",
+"after-n-days"
+);
 // test driver
 $userIDs = array(1, 2, 3, 5, 6, 7, 8, 10, 22, 42, 45);
 $users = new users();
 $users->truncateTable();
-
 foreach($userIDs as $userID) {
 $users->setUI($userID, $trendlineVisSettings[rand(0,2)], $annotationMode[rand(0,1)]);
 }
-
 foreach($userIDs as $userID) {
 $userUISettings[] = $users->getUI($userID, array_rand($trendlineVisSettings), array_rand($annotationMode));
 }
@@ -712,17 +747,15 @@ $users->close();
 
 
 /*
- print "<h3>test driver</h3>";
-
+print "<h3>test driver</h3>";
 $users      = new users();
 $classIDs   = $users->getClassIDs();
 print "classIDs: (";
-		foreach ($classIDs as $classID) {
-		print "$classID, ";
-		//    $users->setClassOwner($classID, 1, 0);
-		}
-		//print ")<br /><br />classList:<br />";
-
+foreach ($classIDs as $classID) {
+print "$classID, ";
+//    $users->setClassOwner($classID, 1, 0);
+}
+//print ")<br /><br />classList:<br />";
 foreach ($classIDs as $classID) {
 //print_r($users->getClassList($classID));
 print "<br />";

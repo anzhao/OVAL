@@ -234,4 +234,3 @@ class KalturaCodeCuePointClientPlugin extends KalturaClientPlugin
 		return 'codeCuePoint';
 	}
 }
-

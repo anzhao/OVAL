@@ -1407,8 +1407,7 @@ class KalturaDocumentService extends KalturaServiceBase
 		$this->client->addParam($kparams, "entryId", $entryId);
 		$this->client->addParam($kparams, "conversionProfileId", $conversionProfileId);
 		if ($dynamicConversionAttributes !== null)
-			foreach($dynamicConversionAttributes as $index => $obj)
-			{
+			foreach ($dynamicConversionAttributes as $index => $obj) {
 				$this->client->addParam($kparams, "dynamicConversionAttributes:$index", $obj->toParams());
 			}
 		$this->client->queueServiceActionCall("document", "convert", $kparams);
@@ -2248,8 +2247,7 @@ class KalturaMediaService extends KalturaServiceBase
 		$this->client->addParam($kparams, "entryId", $entryId);
 		$this->client->addParam($kparams, "conversionProfileId", $conversionProfileId);
 		if ($dynamicConversionAttributes !== null)
-			foreach($dynamicConversionAttributes as $index => $obj)
-			{
+			foreach ($dynamicConversionAttributes as $index => $obj) {
 				$this->client->addParam($kparams, "dynamicConversionAttributes:$index", $obj->toParams());
 			}
 		$this->client->queueServiceActionCall("media", "convert", $kparams);
@@ -3234,8 +3232,7 @@ class KalturaPlaylistService extends KalturaServiceBase
 	function executeFromFilters(array $filters, $totalResults, $detailed = "")
 	{
 		$kparams = array();
-		foreach($filters as $index => $obj)
-		{
+		foreach ($filters as $index => $obj) {
 			$this->client->addParam($kparams, "filters:$index", $obj->toParams());
 		}
 		$this->client->addParam($kparams, "totalResults", $totalResults);
@@ -3365,8 +3362,7 @@ class KalturaReportService extends KalturaServiceBase
 		$kparams = array();
 		$this->client->addParam($kparams, "id", $id);
 		if ($params !== null)
-			foreach($params as $index => $obj)
-			{
+			foreach ($params as $index => $obj) {
 				$this->client->addParam($kparams, "params:$index", $obj->toParams());
 			}
 		$this->client->queueServiceActionCall("report", "execute", $kparams);
@@ -3383,8 +3379,7 @@ class KalturaReportService extends KalturaServiceBase
 		$kparams = array();
 		$this->client->addParam($kparams, "id", $id);
 		if ($params !== null)
-			foreach($params as $index => $obj)
-			{
+			foreach ($params as $index => $obj) {
 				$this->client->addParam($kparams, "params:$index", $obj->toParams());
 			}
 		$this->client->queueServiceActionCall('report', 'getCsv', $kparams);
@@ -5239,7 +5234,7 @@ class KalturaClient extends KalturaClientBase
 	public function __construct(KalturaConfiguration $config)
 	{
 		parent::__construct($config);
-		
+
 		$this->accessControlProfile = new KalturaAccessControlProfileService($this);
 		$this->accessControl = new KalturaAccessControlService($this);
 		$this->adminUser = new KalturaAdminUserService($this);
@@ -5284,6 +5279,5 @@ class KalturaClient extends KalturaClientBase
 		$this->widget = new KalturaWidgetService($this);
 		$this->xInternal = new KalturaXInternalService($this);
 	}
-	
-}
 
+}

@@ -30,8 +30,8 @@ require_once(dirname(__FILE__) . "/../database/media.php");
 
 
 startSession();
-$userID     = $_SESSION['user_id'];
-$userName   = $_SESSION['name'];
+$userID = $_SESSION['user_id'];
+$userName = $_SESSION['name'];
 
 //print "hello";
 //print_r($_POST);

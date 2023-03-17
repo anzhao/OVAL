@@ -433,4 +433,3 @@ class KalturaShortLinkClientPlugin extends KalturaClientPlugin
 		return 'shortLink';
 	}
 }
-

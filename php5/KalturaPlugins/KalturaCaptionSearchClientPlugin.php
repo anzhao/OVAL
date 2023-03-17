@@ -288,4 +288,3 @@ class KalturaCaptionSearchClientPlugin extends KalturaClientPlugin
 		return 'captionSearch';
 	}
 }
-

@@ -150,8 +150,7 @@ class KalturaDocumentsService extends KalturaServiceBase
 		$this->client->addParam($kparams, "entryId", $entryId);
 		$this->client->addParam($kparams, "conversionProfileId", $conversionProfileId);
 		if ($dynamicConversionAttributes !== null)
-			foreach($dynamicConversionAttributes as $index => $obj)
-			{
+			foreach ($dynamicConversionAttributes as $index => $obj) {
 				$this->client->addParam($kparams, "dynamicConversionAttributes:$index", $obj->toParams());
 			}
 		$this->client->queueServiceActionCall("document_documents", "convert", $kparams);
@@ -270,7 +269,7 @@ class KalturaDocumentClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaDocumentClientPlugin($client);
 		return self::$instance;
 	}
@@ -294,4 +293,3 @@ class KalturaDocumentClientPlugin extends KalturaClientPlugin
 		return 'document';
 	}
 }
-

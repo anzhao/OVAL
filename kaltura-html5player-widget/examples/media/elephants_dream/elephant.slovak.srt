@@ -1,18 +1,18 @@
 1
 00:00:15,042 --> 00:00:18,042
-V¾avo, v¾avo vidíme ...
+Vï¿½avo, vï¿½avo vidï¿½me ...
 
 2
 00:00:18,750 --> 00:00:20,333
-Vpravo vidíme...
+Vpravo vidï¿½me...
 
 3
 00:00:20,417 --> 00:00:21,917
-...trhaèov hláv.
+...trhaï¿½ov hlï¿½v.
 
 4
 00:00:22,000 --> 00:00:24,625
-Všetko je bezpeèné.|dokonale bezpeèné.
+Vï¿½etko je bezpeï¿½nï¿½.|dokonale bezpeï¿½nï¿½.
 
 5
 00:00:26,333 --> 00:00:27,333
@@ -24,7 +24,7 @@ Pozor!
 
 7
 00:00:47,125 --> 00:00:48,250
-Si zranený?
+Si zranenï¿½?
 
 8
 00:00:51,917 --> 00:00:53,917
@@ -36,23 +36,23 @@ Som Ok.
 
 10
 00:00:57,583 --> 00:01:01,667
-Vstávaj.|Emo, nie je to tu bezpeèné.
+Vstï¿½vaj.|Emo, nie je to tu bezpeï¿½nï¿½.
 
 11
 00:01:02,208 --> 00:01:03,667
-Poïme.
+Poï¿½me.
 
 12
 00:01:03,750 --> 00:01:05,750
-Èo je ïalej?
+ï¿½o je ï¿½alej?
 
 13
 00:01:05,875 --> 00:01:07,875
-Hneï uvidíš!
+Hneï¿½ uvidï¿½!
 
 14
 00:01:16,167 --> 00:01:18,375
-Emo.|Tadia¾to.
+Emo.|Tadiaï¿½to.
 
 15
 00:01:34,958 --> 00:01:35,792
@@ -60,47 +60,47 @@ Nasleduj ma!
 
 16
 00:02:11,583 --> 00:02:12,792
-Rýchlo, Emo.
+Rï¿½chlo, Emo.
 
 17
 00:02:48,375 --> 00:02:50,083
-Nedávaš pozor!
+Nedï¿½vaï¿½ pozor!
 
 18
 00:02:50,750 --> 00:02:54,500
-Chcel som len dvihnú...|...telefón.
+Chcel som len dvihnï¿½ï¿½...|...telefï¿½n.
 
 19
 00:02:55,000 --> 00:02:58,208
-Emo, pozri,|poèúvaj.
+Emo, pozri,|poï¿½ï¿½vaj.
 
 20
 00:02:59,750 --> 00:03:02,292
-Musíš sa nauèi poèúva.
+Musï¿½ sa nauï¿½iï¿½ poï¿½ï¿½vaï¿½.
 
 21
 00:03:03,625 --> 00:03:05,125
-Toto nie je nejaká hra.
+Toto nie je nejakï¿½ hra.
 
 22
 00:03:06,167 --> 00:03:08,750
-Ty, my, tu môžme ¾ahko zomrie.
+Ty, my, tu mï¿½ï¿½me ï¿½ahko zomrieï¿½.
 
 23
 00:03:10,208 --> 00:03:14,125
-Poèúvaj,|poèúvaj zvuky toho stroja.
+Poï¿½ï¿½vaj,|poï¿½ï¿½vaj zvuky toho stroja.
 
 24
 00:03:18,333 --> 00:03:20,417
-Poèúvaj svoj dych.
+Poï¿½ï¿½vaj svoj dych.
 
 25
 00:04:27,208 --> 00:04:29,250
-Nie si z toho niekedy už unavený?
+Nie si z toho niekedy uï¿½ unavenï¿½?
 
 26
 00:04:29,583 --> 00:04:31,083
-Unavený?!?
+Unavenï¿½?!?
 
 27
 00:04:31,750 --> 00:04:34,667
@@ -112,7 +112,7 @@ Jeden krok mimo ...
 
 29
 00:04:37,833 --> 00:04:39,792
-...a si rozdrtený na kašu.
+...a si rozdrtenï¿½ na kaï¿½u.
 
 30
 00:04:41,042 --> 00:04:42,375
@@ -120,23 +120,23 @@ Ale nie je to -
 
 31
 00:04:42,417 --> 00:04:46,542
-Kašu, Emo!|Je to to èo chceš? Kaša?
+Kaï¿½u, Emo!|Je to to ï¿½o chceï¿½? Kaï¿½a?
 
 32
 00:04:48,083 --> 00:04:50,000
-Emo, tvoj cie¾ života?
+Emo, tvoj cieï¿½ ï¿½ivota?
 
 33
 00:04:50,583 --> 00:04:52,250
-Kaša.
+Kaï¿½a.
 
 34
 00:05:41,833 --> 00:05:43,458
-Emo, zavri oèi.
+Emo, zavri oï¿½i.
 
 35
 00:05:44,917 --> 00:05:46,583
-Preèo?|- Už!
+Preï¿½o?|- Uï¿½!
 
 36
 00:05:53,750 --> 00:05:56,042
@@ -144,31 +144,31 @@ Dobre.
 
 37
 00:05:59,542 --> 00:06:02,792
-Èo vidíš po svojej ¾avici, Emo?
+ï¿½o vidï¿½ po svojej ï¿½avici, Emo?
 
 38
 00:06:04,417 --> 00:06:06,000
-Niè.|- Naozaj?
+Niï¿½.|- Naozaj?
 
 39
 00:06:06,333 --> 00:06:07,917
-Vôbec niè.
+Vï¿½bec niï¿½.
 
 40
 00:06:08,042 --> 00:06:12,417
-A po tvojej pravici,|èo vidíš po svojej pravici, Emo?
+A po tvojej pravici,|ï¿½o vidï¿½ po svojej pravici, Emo?
 
 41
 00:06:13,875 --> 00:06:16,917
-To isté Proog, presne to isté...
+To istï¿½ Proog, presne to istï¿½...
 
 42
 00:06:17,083 --> 00:06:18,583
-Niè!
+Niï¿½!
 
 43
 00:06:40,625 --> 00:06:42,958
-Poèúvaj Proog! Poèuješ to!
+Poï¿½ï¿½vaj Proog! Poï¿½ujeï¿½ to!
 
 44
 00:06:43,625 --> 00:06:45,042
@@ -176,15 +176,15 @@ Ideme tam?
 
 45
 00:06:45,208 --> 00:06:48,042
-Tam? |To nie je bezpeèné.
+Tam? |To nie je bezpeï¿½nï¿½.
 
 46
 00:06:49,917 --> 00:06:52,500
-Ale...|- Dôveruj mi, nie je.
+Ale...|- Dï¿½veruj mi, nie je.
 
 47
 00:06:53,292 --> 00:06:54,792
-Možno by som mohol...
+Moï¿½no by som mohol...
 
 48
 00:06:54,833 --> 00:06:56,333
@@ -196,7 +196,7 @@ NIE!
 
 50
 00:07:00,875 --> 00:07:03,750
-Nejaké ïalšie otázky, Emo?
+Nejakï¿½ ï¿½alï¿½ie otï¿½zky, Emo?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -208,7 +208,7 @@ Emo?
 
 53
 00:07:11,875 --> 00:07:13,542
-Emo, preèo...
+Emo, preï¿½o...
 
 54
 00:07:13,583 --> 00:07:14,458
@@ -216,31 +216,31 @@ Emo...
 
 55
 00:07:14,500 --> 00:07:18,500
-...preèo nevidíš|aké je to tu krásne?
+...preï¿½o nevidï¿½|akï¿½ je to tu krï¿½sne?
 
 56
 00:07:18,833 --> 00:07:20,750
-Spôsob akým to funguje.
+Spï¿½sob akï¿½m to funguje.
 
 57
 00:07:20,875 --> 00:07:24,000
-Aké dokonalé to je.
+Akï¿½ dokonalï¿½ to je.
 
 58
 00:07:24,083 --> 00:07:27,417
-Nie, Proog, nevidím.
+Nie, Proog, nevidï¿½m.
 
 59
 00:07:27,542 --> 00:07:30,333
-Nevidím, pretože tu niè nie je.
+Nevidï¿½m, pretoï¿½e tu niï¿½ nie je.
 
 60
 00:07:31,500 --> 00:07:35,333
-A preèo by som mal zveri môj|život nieèomu èo nie je?
+A preï¿½o by som mal zveriï¿½ mï¿½j|ï¿½ivot nieï¿½omu ï¿½o nie je?
 
 61
 00:07:35,583 --> 00:07:37,125
-Môžeš mi to poveda?
+Mï¿½ï¿½eï¿½ mi to povedaï¿½?
 
 62
 00:07:37,500 --> 00:07:39,167
@@ -252,11 +252,11 @@ Proog...
 
 64
 00:07:45,500 --> 00:07:47,333
-Ty si chorí.
+Ty si chorï¿½.
 
 65
 00:07:47,375 --> 00:07:49,208
-Drž sa odomòa ïalej.
+Drï¿½ sa odomï¿½a ï¿½alej.
 
 66
 00:07:52,583 --> 00:07:55,083
@@ -268,11 +268,11 @@ Je to pasca.
 
 68
 00:07:57,208 --> 00:08:01,750
-Po svojej ¾avici vidíš|Babylonské visuté záhrady!
+Po svojej ï¿½avici vidï¿½|Babylonskï¿½ visutï¿½ zï¿½hrady!
 
 69
 00:08:02,250 --> 00:08:04,292
-Aká je to pasca?
+Akï¿½ je to pasca?
 
 70
 00:08:05,458 --> 00:08:07,125
@@ -280,11 +280,11 @@ Nie, Emo.
 
 71
 00:08:09,417 --> 00:08:12,792
-Po svojej pravici vidíš...|...hádaj èo...
+Po svojej pravici vidï¿½...|...hï¿½daj ï¿½o...
 
 72
 00:08:13,000 --> 00:08:14,750
-...Rodský kolos!
+...Rodskï¿½ kolos!
 
 73
 00:08:15,833 --> 00:08:16,708
@@ -292,7 +292,7 @@ Nie!
 
 74
 00:08:16,750 --> 00:08:22,167
-Rodský kolos|a je tu len pre teba Proog.
+Rodskï¿½ kolos|a je tu len pre teba Proog.
 
 75
 00:08:51,333 --> 00:08:53,167

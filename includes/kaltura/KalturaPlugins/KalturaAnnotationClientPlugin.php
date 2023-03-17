@@ -306,7 +306,7 @@ class KalturaAnnotationClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaAnnotationClientPlugin($client);
 		return self::$instance;
 	}
@@ -330,4 +330,3 @@ class KalturaAnnotationClientPlugin extends KalturaClientPlugin
 		return 'annotation';
 	}
 }
-

@@ -499,7 +499,7 @@ class KalturaAdminConsoleClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaAdminConsoleClientPlugin($client);
 		return self::$instance;
 	}
@@ -527,4 +527,3 @@ class KalturaAdminConsoleClientPlugin extends KalturaClientPlugin
 		return 'adminConsole';
 	}
 }
-

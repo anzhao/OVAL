@@ -320,7 +320,7 @@ class KalturaStorageProfileClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaStorageProfileClientPlugin($client);
 		return self::$instance;
 	}
@@ -344,4 +344,3 @@ class KalturaStorageProfileClientPlugin extends KalturaClientPlugin
 		return 'storageProfile';
 	}
 }
-

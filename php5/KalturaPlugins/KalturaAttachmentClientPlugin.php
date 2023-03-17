@@ -372,4 +372,3 @@ class KalturaAttachmentClientPlugin extends KalturaClientPlugin
 		return 'attachment';
 	}
 }
-

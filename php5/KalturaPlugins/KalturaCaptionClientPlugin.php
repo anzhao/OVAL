@@ -639,4 +639,3 @@ class KalturaCaptionClientPlugin extends KalturaClientPlugin
 		return 'caption';
 	}
 }
-

@@ -109,4 +109,3 @@ class KalturaMultiCentersClientPlugin extends KalturaClientPlugin
 		return 'multiCenters';
 	}
 }
-

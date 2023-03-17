@@ -12,7 +12,7 @@ Na desni lahko vidimo...
 
 4
 00:00:22,000 --> 00:00:24,625
-Vse je varno.|Èisto varno.
+Vse je varno.|ï¿½isto varno.
 
 5
 00:00:25,000 --> 00:00:27,333
@@ -24,7 +24,7 @@ Pazi!
 
 7
 00:00:47,125 --> 00:00:48,250
-Ali si poškodovan?
+Ali si poï¿½kodovan?
 
 8
 00:00:51,917 --> 00:00:53,917
@@ -48,7 +48,7 @@ Kaj pa sedaj?
 
 13
 00:01:05,875 --> 00:01:07,875
-Boš videl!
+Boï¿½ videl!
 
 14
 00:01:16,167 --> 00:01:18,375
@@ -72,11 +72,11 @@ Samo oglasiti sem se hotel...|...na telefon.
 
 19
 00:02:55,000 --> 00:02:58,208
-Emo, poglej,|hocem reèi poslušaj.
+Emo, poglej,|hocem reï¿½i posluï¿½aj.
 
 20
 00:02:59,750 --> 00:03:02,292
-Nauèiti se moraš poslušati.
+Nauï¿½iti se moraï¿½ posluï¿½ati.
 
 21
 00:03:03,625 --> 00:03:05,125
@@ -88,7 +88,7 @@ Ti, midva, lahko umreva tukaj.
 
 23
 00:03:10,208 --> 00:03:14,125
-Poslušaj.|Prisluhni zvoku stroja.
+Posluï¿½aj.|Prisluhni zvoku stroja.
 
 24
 00:03:18,333 --> 00:03:20,417
@@ -96,11 +96,11 @@ Prisluhni svojemu dihanju.
 
 25
 00:04:27,208 --> 00:04:29,250
-Ali se nikoli ne navelièaš tega?
+Ali se nikoli ne naveliï¿½aï¿½ tega?
 
 26
 00:04:29,583 --> 00:04:31,083
-Navelièam?!?
+Naveliï¿½am?!?
 
 27
 00:04:31,750 --> 00:04:34,667
@@ -108,7 +108,7 @@ Stroj je kot urin mehanizem.
 
 28
 00:04:35,500 --> 00:04:37,708
-En napaèen korak...
+En napaï¿½en korak...
 
 29
 00:04:37,833 --> 00:04:39,792
@@ -120,11 +120,11 @@ Ampak ali ni -
 
 31
 00:04:42,417 --> 00:04:46,542
-Prah, Emo!|Ali je to, kar si želiš, prah?
+Prah, Emo!|Ali je to, kar si ï¿½eliï¿½, prah?
 
 32
 00:04:48,083 --> 00:04:50,000
-Tvoj življenski cilj?
+Tvoj ï¿½ivljenski cilj?
 
 33
 00:04:50,583 --> 00:04:52,250
@@ -132,7 +132,7 @@ Prah.
 
 34
 00:05:41,833 --> 00:05:43,458
-Emo, zapri oèi.
+Emo, zapri oï¿½i.
 
 35
 00:05:44,917 --> 00:05:46,583
@@ -144,19 +144,19 @@ Dobro.
 
 37
 00:05:59,542 --> 00:06:02,792
-Kaj vidiš na levi Emo?
+Kaj vidiï¿½ na levi Emo?
 
 38
 00:06:04,417 --> 00:06:06,000
-Niè.|- Res?
+Niï¿½.|- Res?
 
 39
 00:06:06,333 --> 00:06:07,917
-Èisto niè.
+ï¿½isto niï¿½.
 
 40
 00:06:08,042 --> 00:06:12,417
-In na desni,|kaj vidiš na desni Emo?
+In na desni,|kaj vidiï¿½ na desni Emo?
 
 41
 00:06:13,875 --> 00:06:16,917
@@ -164,11 +164,11 @@ Isto Proog, spet isto...
 
 42
 00:06:17,083 --> 00:06:18,583
-Niè!
+Niï¿½!
 
 43
 00:06:40,625 --> 00:06:42,958
-Poslušaj Proog! Ali slišiš!
+Posluï¿½aj Proog! Ali sliï¿½iï¿½!
 
 44
 00:06:43,625 --> 00:06:45,042
@@ -184,7 +184,7 @@ Ampak...|- Zaupaj mi, ni varno.
 
 47
 00:06:53,292 --> 00:06:54,792
-Mogoèe bi lahko...
+Mogoï¿½e bi lahko...
 
 48
 00:06:54,833 --> 00:06:56,333
@@ -196,7 +196,7 @@ NE!
 
 50
 00:07:00,875 --> 00:07:03,750
-Bi rad še kaj dodal Emo?
+Bi rad ï¿½e kaj dodal Emo?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -216,7 +216,7 @@ Emo...
 
 55
 00:07:14,500 --> 00:07:18,500
-...zakaj ne vidiš|lepote tega prostora?
+...zakaj ne vidiï¿½|lepote tega prostora?
 
 56
 00:07:18,833 --> 00:07:20,750
@@ -232,15 +232,15 @@ Ne, Proog, ne vidim.
 
 59
 00:07:27,542 --> 00:07:30,333
-Ne vidim, ker ni niè tam.
+Ne vidim, ker ni niï¿½ tam.
 
 60
 00:07:31,500 --> 00:07:35,333
-In zakaj bi zaupal svoje|življenje neèemu, èesar sploh ni?
+In zakaj bi zaupal svoje|ï¿½ivljenje neï¿½emu, ï¿½esar sploh ni?
 
 61
 00:07:35,583 --> 00:07:37,125
-Ali mi lahko poveš?
+Ali mi lahko poveï¿½?
 
 62
 00:07:37,500 --> 00:07:39,167
@@ -268,11 +268,11 @@ To je past.
 
 68
 00:07:57,208 --> 00:08:01,750
-Na levi lahko vidiš|babilonske viseèe vrtove!
+Na levi lahko vidiï¿½|babilonske viseï¿½e vrtove!
 
 69
 00:08:02,250 --> 00:08:04,292
-Kakšna past je to?
+Kakï¿½na past je to?
 
 70
 00:08:05,458 --> 00:08:07,125
@@ -280,7 +280,7 @@ Ne, Emo.
 
 71
 00:08:09,417 --> 00:08:12,792
-Na desni lahko vidiš...|...poglej to...
+Na desni lahko vidiï¿½...|...poglej to...
 
 72
 00:08:13,000 --> 00:08:14,750

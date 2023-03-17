@@ -224,4 +224,3 @@ class KalturaEventNotificationClientPlugin extends KalturaClientPlugin
 		return 'eventNotification';
 	}
 }
-

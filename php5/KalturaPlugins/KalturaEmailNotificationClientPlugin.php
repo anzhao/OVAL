@@ -223,4 +223,3 @@ class KalturaEmailNotificationClientPlugin extends KalturaClientPlugin
 		return 'emailNotification';
 	}
 }
-

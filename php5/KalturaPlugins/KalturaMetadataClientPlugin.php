@@ -1288,4 +1288,3 @@ class KalturaMetadataClientPlugin extends KalturaClientPlugin
 		return 'metadata';
 	}
 }
-

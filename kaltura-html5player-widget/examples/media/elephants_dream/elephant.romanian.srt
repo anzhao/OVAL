@@ -1,10 +1,10 @@
 1
 00:00:15,042 --> 00:00:18,042
-În stânga se vad...|Se vad...
+ï¿½n stï¿½nga se vad...|Se vad...
 
 2
 00:00:18,750 --> 00:00:20,333
-În dreapta se vad...
+ï¿½n dreapta se vad...
 
 3
 00:00:20,417 --> 00:00:21,917
@@ -12,7 +12,7 @@
 
 4
 00:00:22,000 --> 00:00:24,625
-Aici suntem în siguranta.|În siguranta deplina.
+Aici suntem ï¿½n siguranta.|ï¿½n siguranta deplina.
 
 5
 00:00:26,333 --> 00:00:27,333
@@ -32,7 +32,7 @@ Nu cred...|tu?
 
 9
 00:00:55,625 --> 00:00:57,125
-Sunt în regula.
+Sunt ï¿½n regula.
 
 10
 00:00:57,583 --> 00:01:01,667
@@ -132,7 +132,7 @@ Pilaf.
 
 34
 00:05:41,833 --> 00:05:43,458
-Emo, închide ochii.
+Emo, ï¿½nchide ochii.
 
 35
 00:05:44,917 --> 00:05:46,583
@@ -144,7 +144,7 @@ Bun.
 
 37
 00:05:59,542 --> 00:06:02,792
-Ce vezi în stânga, Emo? Hai, spune.
+Ce vezi ï¿½n stï¿½nga, Emo? Hai, spune.
 
 38
 00:06:04,417 --> 00:06:06,000
@@ -156,7 +156,7 @@ Nu, chiar nimica.
 
 40
 00:06:08,042 --> 00:06:12,417
-Asa... si în dreapta?|Ia zi, ce vezi în dreapta, Emo?
+Asa... si ï¿½n dreapta?|Ia zi, ce vezi ï¿½n dreapta, Emo?
 
 41
 00:06:13,875 --> 00:06:16,917
@@ -196,7 +196,7 @@ NU!
 
 50
 00:07:00,875 --> 00:07:03,750
-Mai ai alte întrebari, Emo?
+Mai ai alte ï¿½ntrebari, Emo?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -220,11 +220,11 @@ Emo...
 
 56
 00:07:18,833 --> 00:07:20,750
-Modul în care functioneaza.
+Modul ï¿½n care functioneaza.
 
 57
 00:07:20,875 --> 00:07:24,000
-Cât de perfect e totul.
+Cï¿½t de perfect e totul.
 
 58
 00:07:24,083 --> 00:07:27,417
@@ -236,7 +236,7 @@ Nu le vad pentru ca n-am ce sa vad!
 
 60
 00:07:31,500 --> 00:07:35,333
-Si de ce sa-mi încredintez viata|unui lucru care nu exista?
+Si de ce sa-mi ï¿½ncredintez viata|unui lucru care nu exista?
 
 61
 00:07:35,583 --> 00:07:37,125
@@ -268,7 +268,7 @@ Da, da... e-o capcana.
 
 68
 00:07:57,208 --> 00:08:01,750
-În stânga se pot vedea|Gradinile suspendate din Babilon!
+ï¿½n stï¿½nga se pot vedea|Gradinile suspendate din Babilon!
 
 69
 00:08:02,250 --> 00:08:04,292
@@ -280,7 +280,7 @@ Nu, Emo.
 
 71
 00:08:09,417 --> 00:08:12,792
-În dreapta se poate vedea...|...Ca sa vezi...
+ï¿½n dreapta se poate vedea...|...Ca sa vezi...
 
 72
 00:08:13,000 --> 00:08:14,750

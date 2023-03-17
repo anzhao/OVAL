@@ -27,64 +27,56 @@
 // @ignore
 // ===================================================================================================
 require_once('../KalturaClient.php');
-require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'KalturaTestConfiguration.php');
+require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'KalturaTestConfiguration.php');
 
-class TestMain 
+class TestMain
 {
 	public static function run()
 	{
-		if(!KalturaTestConfiguration::SECRET)
-		{
+		if (!KalturaTestConfiguration::SECRET) {
 			throw new Exception("Please fill the partner credentials in KalturaTestConfiguration class");
 		}
-		
+
 		$test = new TestMain();
 		$test->listActions();
 		$test->multiRequest();
 		$test->add();
 		echo "\nSample code finished successfully.";
 	}
-	
+
 	private function getKalturaClient($partnerId, $adminSecret, $isAdmin)
 	{
 		$kConfig = new KalturaConfiguration($partnerId);
 		$kConfig->serviceUrl = KalturaTestConfiguration::SERVICE_URL;
 		$client = new KalturaClient($kConfig);
-		
+
 		$userId = "SomeUser";
-		$sessionType = ($isAdmin)? KalturaSessionType::ADMIN : KalturaSessionType::USER; 
-		try
-		{
+		$sessionType = ($isAdmin) ? KalturaSessionType::ADMIN : KalturaSessionType::USER;
+		try {
 			$ks = $client->generateSession($adminSecret, $userId, $sessionType, $partnerId);
 			$client->setKs($ks);
-		}
-		catch(Exception $ex)
-		{
+		} catch (Exception $ex) {
 			die("could not start session - check configurations in KalturaTestConfiguration class");
 		}
-		
+
 		return $client;
 	}
-	
+
 	public function listActions()
 	{
-		try
-		{
+		try {
 			$client = $this->getKalturaClient(KalturaTestConfiguration::PARTNER_ID, KalturaTestConfiguration::ADMIN_SECRET, true);
 			$results = $client->media->listAction();
 			$entry = $results->objects[0];
 			echo "\nGot an entry: [{$entry->name}]";
-		}
-		catch(Exception $ex)
-		{
+		} catch (Exception $ex) {
 			die($ex->getMessage());
 		}
 	}
 
 	public function multiRequest()
 	{
-		try
-		{
+		try {
 			$client = $this->getKalturaClient(KalturaTestConfiguration::PARTNER_ID, KalturaTestConfiguration::ADMIN_SECRET, true);
 			$client->startMultiRequest();
 			$client->baseEntry->count();
@@ -92,46 +84,42 @@ class TestMain
 			$client->partner->getUsage(2011);
 			$multiRequest = $client->doMultiRequest();
 			$partner = $multiRequest[1];
-			if(!is_object($partner) || get_class($partner) != 'KalturaPartner')
-			{
+			if (!is_object($partner) || get_class($partner) != 'KalturaPartner') {
 				throw new Exception("UNEXPECTED_RESULT");
 			}
 			echo "\nGot Admin User email: [{$partner->adminEmail}]";
+		} catch (Exception $ex) {
+			die($ex->getMessage());
 		}
-		catch(Exception $ex)
-		{
-			die($ex->getMessage()); 
-		}
-	}	
+	}
 
 	public function add()
 	{
-		try 
-		{
+		try {
 			echo "\nUploading test video...";
 			$client = $this->getKalturaClient(KalturaTestConfiguration::PARTNER_ID, KalturaTestConfiguration::ADMIN_SECRET, false);
 			$filePath = KalturaTestConfiguration::UPLOAD_FILE;
-			
+
 			$token = $client->baseEntry->upload($filePath);
 			$entry = new KalturaMediaEntry();
 			$entry->name = "my upload entry";
 			$entry->mediaType = KalturaMediaType::VIDEO;
 			$newEntry = $client->media->addFromUploadedFile($entry, $token);
 			echo "\nUploaded a new Video entry " . $newEntry->id;
-/*
+			/*
 			$client->media->delete($newEntry->id);
 			try {
-				$entry = null;
-				$entry = $client->media->get($newEntry->id);
+			$entry = null;
+			$entry = $client->media->get($newEntry->id);
 			} catch (KalturaException $exApi) {
-				if ($entry == null) {
-					echo "\nDeleted the entry (" . $newEntry->id .") successfully!";
-				}
+			if ($entry == null) {
+			echo "\nDeleted the entry (" . $newEntry->id .") successfully!";
 			}
-*/
+			}
+			*/
 		} catch (KalturaException $ex) {
 			die($ex->getMessage());
-		}	
+		}
 	}
 }
 

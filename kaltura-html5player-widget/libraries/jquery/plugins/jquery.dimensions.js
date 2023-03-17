@@ -10,107 +10,122 @@
  * Requires: jQuery 1.2+
  */
 
-(function($){
+(function ($) {
+  $.dimensions = {
+    version: "@VERSION",
+  };
 
-$.dimensions = {
-	version: '@VERSION'
-};
+  // Create innerHeight, innerWidth, outerHeight and outerWidth methods
+  $.each(["Height", "Width"], function (i, name) {
+    // innerHeight and innerWidth
+    $.fn["inner" + name] = function () {
+      if (!this[0]) return;
 
-// Create innerHeight, innerWidth, outerHeight and outerWidth methods
-$.each( [ 'Height', 'Width' ], function(i, name){
+      var torl = name == "Height" ? "Top" : "Left", // top or left
+        borr = name == "Height" ? "Bottom" : "Right"; // bottom or right
 
-	// innerHeight and innerWidth
-	$.fn[ 'inner' + name ] = function() {
-		if (!this[0]) return;
+      return (
+        this[name.toLowerCase()]() +
+        num(this, "padding" + torl) +
+        num(this, "padding" + borr)
+      );
+    };
 
-		var torl = name == 'Height' ? 'Top'	: 'Left',  // top or left
-			borr = name == 'Height' ? 'Bottom' : 'Right'; // bottom or right
+    // outerHeight and outerWidth
+    $.fn["outer" + name] = function (options) {
+      if (!this[0]) return;
 
-		return this[ name.toLowerCase() ]() + num(this, 'padding' + torl) + num(this, 'padding' + borr);
-	};
+      var torl = name == "Height" ? "Top" : "Left", // top or left
+        borr = name == "Height" ? "Bottom" : "Right"; // bottom or right
 
-	// outerHeight and outerWidth
-	$.fn[ 'outer' + name ] = function(options) {
-		if (!this[0]) return;
+      options = $.extend({ margin: false }, options || {});
 
-		var torl = name == 'Height' ? 'Top'	: 'Left',  // top or left
-			borr = name == 'Height' ? 'Bottom' : 'Right'; // bottom or right
+      return (
+        this[name.toLowerCase()]() +
+        num(this, "border" + torl + "Width") +
+        num(this, "border" + borr + "Width") +
+        num(this, "padding" + torl) +
+        num(this, "padding" + borr) +
+        (options.margin
+          ? num(this, "margin" + torl) + num(this, "margin" + borr)
+          : 0)
+      );
+    };
+  });
 
-		options = $.extend({ margin: false }, options || {});
+  // Create scrollLeft and scrollTop methods
+  $.each(["Left", "Top"], function (i, name) {
+    $.fn["scroll" + name] = function (val) {
+      if (!this[0]) return;
 
-		return this[ name.toLowerCase() ]()
-				+ num(this, 'border' + torl + 'Width') + num(this, 'border' + borr + 'Width')
-				+ num(this, 'padding' + torl) + num(this, 'padding' + borr)
-				+ (options.margin ? (num(this, 'margin' + torl) + num(this, 'margin' + borr)) : 0);
-	};
-});
+      return val != undefined
+        ? // Set the scroll offset
+          this.each(function () {
+            this == window || this == document
+              ? window.scrollTo(
+                  name == "Left" ? val : $(window)["scrollLeft"](),
+                  name == "Top" ? val : $(window)["scrollTop"]()
+                )
+              : (this["scroll" + name] = val);
+          })
+        : // Return the scroll offset
+        this[0] == window || this[0] == document
+        ? self[name == "Left" ? "pageXOffset" : "pageYOffset"] ||
+          ($.boxModel && document.documentElement["scroll" + name]) ||
+          document.body["scroll" + name]
+        : this[0]["scroll" + name];
+    };
+  });
 
-// Create scrollLeft and scrollTop methods
-$.each( ['Left', 'Top'], function(i, name) {
-	$.fn[ 'scroll' + name ] = function(val) {
-		if (!this[0]) return;
+  $.fn.extend({
+    position: function () {
+      var left = 0,
+        top = 0,
+        elem = this[0],
+        offset,
+        parentOffset,
+        offsetParent,
+        results;
 
-		return val != undefined ?
+      if (elem) {
+        // Get *real* offsetParent
+        offsetParent = this.offsetParent();
 
-			// Set the scroll offset
-			this.each(function() {
-				this == window || this == document ?
-					window.scrollTo(
-						name == 'Left' ? val : $(window)[ 'scrollLeft' ](),
-						name == 'Top'  ? val : $(window)[ 'scrollTop'  ]()
-					) :
-					this[ 'scroll' + name ] = val;
-			}) :
+        // Get correct offsets
+        offset = this.offset();
+        parentOffset = offsetParent.offset();
 
-			// Return the scroll offset
-			this[0] == window || this[0] == document ?
-				self[ (name == 'Left' ? 'pageXOffset' : 'pageYOffset') ] ||
-					$.boxModel && document.documentElement[ 'scroll' + name ] ||
-					document.body[ 'scroll' + name ] :
-				this[0][ 'scroll' + name ];
-	};
-});
+        // Subtract element margins
+        offset.top -= num(elem, "marginTop");
+        offset.left -= num(elem, "marginLeft");
 
-$.fn.extend({
-	position: function() {
-		var left = 0, top = 0, elem = this[0], offset, parentOffset, offsetParent, results;
+        // Add offsetParent borders
+        parentOffset.top += num(offsetParent, "borderTopWidth");
+        parentOffset.left += num(offsetParent, "borderLeftWidth");
 
-		if (elem) {
-			// Get *real* offsetParent
-			offsetParent = this.offsetParent();
+        // Subtract the two offsets
+        results = {
+          top: offset.top - parentOffset.top,
+          left: offset.left - parentOffset.left,
+        };
+      }
 
-			// Get correct offsets
-			offset	   = this.offset();
-			parentOffset = offsetParent.offset();
+      return results;
+    },
 
-			// Subtract element margins
-			offset.top  -= num(elem, 'marginTop');
-			offset.left -= num(elem, 'marginLeft');
+    offsetParent: function () {
+      var offsetParent = this[0].offsetParent;
+      while (
+        offsetParent &&
+        !/^body|html$/i.test(offsetParent.tagName) &&
+        $.css(offsetParent, "position") == "static"
+      )
+        offsetParent = offsetParent.offsetParent;
+      return $(offsetParent);
+    },
+  });
 
-			// Add offsetParent borders
-			parentOffset.top  += num(offsetParent, 'borderTopWidth');
-			parentOffset.left += num(offsetParent, 'borderLeftWidth');
-
-			// Subtract the two offsets
-			results = {
-				top:  offset.top  - parentOffset.top,
-				left: offset.left - parentOffset.left
-			};
-		}
-
-		return results;
-	},
-
-	offsetParent: function() {
-		var offsetParent = this[0].offsetParent;
-		while ( offsetParent && (!/^body|html$/i.test(offsetParent.tagName) && $.css(offsetParent, 'position') == 'static') )
-			offsetParent = offsetParent.offsetParent;
-		return $(offsetParent);
-	}
-});
-
-var num = function(el, prop) {
-	return parseInt($.css(el.jquery?el[0]:el,prop))||0;
-};
-
+  var num = function (el, prop) {
+    return parseInt($.css(el.jquery ? el[0] : el, prop)) || 0;
+  };
 })(jQuery);

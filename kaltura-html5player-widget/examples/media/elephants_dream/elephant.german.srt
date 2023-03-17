@@ -36,7 +36,7 @@ Mir fehlt nichts.
 
 10
 00:00:57,583 --> 00:01:01,667
-Steh auf!|Emo, es ist gefährlich hier.
+Steh auf!|Emo, es ist gefï¿½hrlich hier.
 
 11
 00:01:02,208 --> 00:01:03,667
@@ -72,11 +72,11 @@ Ich wollte doch nur an...|...ans Telefon gehen.
 
 19
 00:02:55,000 --> 00:02:58,208
-Emo, schau,|ich meine, hör zu.
+Emo, schau,|ich meine, hï¿½r zu.
 
 20
 00:02:59,750 --> 00:03:02,292
-Du musst lernen zuzuhören.
+Du musst lernen zuzuhï¿½ren.
 
 21
 00:03:03,625 --> 00:03:05,125
@@ -84,15 +84,15 @@ Das hier ist kein Spiel.
 
 22
 00:03:06,167 --> 00:03:08,750
-Du, wir, könnten hier draußen leicht sterben.
+Du, wir, kï¿½nnten hier drauï¿½en leicht sterben.
 
 23
 00:03:10,208 --> 00:03:14,125
-Hör zu...|Hör dem Klang der Maschine zu.
+Hï¿½r zu...|Hï¿½r dem Klang der Maschine zu.
 
 24
 00:03:18,333 --> 00:03:20,417
-Hör auf deinen Atem.
+Hï¿½r auf deinen Atem.
 
 25
 00:04:27,208 --> 00:04:29,250
@@ -132,7 +132,7 @@ Zerquetscht!
 
 34
 00:05:41,833 --> 00:05:43,458
-Emo, schließ die Augen.
+Emo, schlieï¿½ die Augen.
 
 35
 00:05:44,917 --> 00:05:46,583
@@ -152,7 +152,7 @@ Nichts.|- Wirklich?
 
 39
 00:06:06,333 --> 00:06:07,917
-Überhaupt nichts.
+ï¿½berhaupt nichts.
 
 40
 00:06:08,042 --> 00:06:12,417
@@ -168,23 +168,23 @@ Nichts!
 
 43
 00:06:40,625 --> 00:06:42,958
-Hör mal, Proog! Hörst du das?
+Hï¿½r mal, Proog! Hï¿½rst du das?
 
 44
 00:06:43,625 --> 00:06:45,042
-Können wir hier hingehen?
+Kï¿½nnen wir hier hingehen?
 
 45
 00:06:45,208 --> 00:06:48,042
-Dorthin?|Das ist gefährlich.
+Dorthin?|Das ist gefï¿½hrlich.
 
 46
 00:06:49,917 --> 00:06:52,500
-Aber...|- Vertrau mir, es ist gefährlich.
+Aber...|- Vertrau mir, es ist gefï¿½hrlich.
 
 47
 00:06:53,292 --> 00:06:54,792
-Vielleicht könnte ich...
+Vielleicht kï¿½nnte ich...
 
 48
 00:06:54,833 --> 00:06:56,333
@@ -216,7 +216,7 @@ Emo...
 
 55
 00:07:14,500 --> 00:07:18,500
-...warum erkennst du nicht|die Schönheit dieses Ortes?
+...warum erkennst du nicht|die Schï¿½nheit dieses Ortes?
 
 56
 00:07:18,833 --> 00:07:20,750
@@ -268,11 +268,11 @@ Haha, eine Falle.
 
 68
 00:07:57,208 --> 00:08:01,750
-Auf der linken Seite sieht man|die Hängenden Gärten von Babylon.
+Auf der linken Seite sieht man|die Hï¿½ngenden Gï¿½rten von Babylon.
 
 69
 00:08:02,250 --> 00:08:04,292
-Wie wär das als Falle?
+Wie wï¿½r das als Falle?
 
 70
 00:08:05,458 --> 00:08:07,125
@@ -292,7 +292,7 @@ Nein!
 
 74
 00:08:16,750 --> 00:08:22,167
-Den Koloss von Rhodos|und er ist nur für dich hier, Proog.
+Den Koloss von Rhodos|und er ist nur fï¿½r dich hier, Proog.
 
 75
 00:08:51,333 --> 00:08:53,167

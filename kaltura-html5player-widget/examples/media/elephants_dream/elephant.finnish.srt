@@ -1,18 +1,18 @@
 1
 00:00:15,042 --> 00:00:18,042
-Vasemmalla voimme nähdä...
+Vasemmalla voimme nï¿½hdï¿½...
 
 2
 00:00:18,750 --> 00:00:20,333
-Oikealla voimme nähdä...
+Oikealla voimme nï¿½hdï¿½...
 
 3
 00:00:20,417 --> 00:00:21,917
-...päähirmut.
+...pï¿½ï¿½hirmut.
 
 4
 00:00:22,000 --> 00:00:24,625
-On turvallista.|Täysin turvallista.
+On turvallista.|Tï¿½ysin turvallista.
 
 5
 00:00:26,333 --> 00:00:27,333
@@ -28,7 +28,7 @@ Satutitko itsesi?
 
 8
 00:00:51,917 --> 00:00:53,917
-Enpä tainnut...|Entä sinä?
+Enpï¿½ tainnut...|Entï¿½ sinï¿½?
 
 9
 00:00:55,625 --> 00:00:57,125
@@ -36,23 +36,23 @@ Olen kunnossa.
 
 10
 00:00:57,583 --> 00:01:01,667
-Nouse ylös.|Emo, täällä ei ole turvallista.
+Nouse ylï¿½s.|Emo, tï¿½ï¿½llï¿½ ei ole turvallista.
 
 11
 00:01:02,208 --> 00:01:03,667
-Mennään.
+Mennï¿½ï¿½n.
 
 12
 00:01:03,750 --> 00:01:05,750
-Mitä seuraavaksi?
+Mitï¿½ seuraavaksi?
 
 13
 00:01:05,875 --> 00:01:07,875
-Tulet näkemään!
+Tulet nï¿½kemï¿½ï¿½n!
 
 14
 00:01:16,167 --> 00:01:18,375
-Emo.|Tätä tietä.
+Emo.|Tï¿½tï¿½ tietï¿½.
 
 15
 00:01:34,958 --> 00:01:35,792
@@ -64,7 +64,7 @@ Nopeasti Emo.
 
 17
 00:02:48,375 --> 00:02:50,083
-Et kiinnitä huomiota!
+Et kiinnitï¿½ huomiota!
 
 18
 00:02:50,750 --> 00:02:54,500
@@ -76,35 +76,35 @@ Emo, katso,|tarkoitan kuuntele.
 
 20
 00:02:59,750 --> 00:03:02,292
-Sinun täytyy oppia kuuntelemaan.
+Sinun tï¿½ytyy oppia kuuntelemaan.
 
 21
 00:03:03,625 --> 00:03:05,125
-Tämä ei ole vain jokin leikki.
+Tï¿½mï¿½ ei ole vain jokin leikki.
 
 22
 00:03:06,167 --> 00:03:08,750
-Sinä, me, voisimme kuolla täällä helposti.
+Sinï¿½, me, voisimme kuolla tï¿½ï¿½llï¿½ helposti.
 
 23
 00:03:10,208 --> 00:03:14,125
-Kuuntele,|kuuntele koneen ääniä.
+Kuuntele,|kuuntele koneen ï¿½ï¿½niï¿½.
 
 24
 00:03:18,333 --> 00:03:20,417
-Kuuntele hengitystäsi.
+Kuuntele hengitystï¿½si.
 
 25
 00:04:27,208 --> 00:04:29,250
-Etkö sinä ikinä väsy tähän?
+Etkï¿½ sinï¿½ ikinï¿½ vï¿½sy tï¿½hï¿½n?
 
 26
 00:04:29,583 --> 00:04:31,083
-Väsy?!?
+Vï¿½sy?!?
 
 27
 00:04:31,750 --> 00:04:34,667
-Kone on kuten seinäkello.
+Kone on kuten seinï¿½kello.
 
 28
 00:04:35,500 --> 00:04:37,708
@@ -112,27 +112,27 @@ Tarpeeton liike...
 
 29
 00:04:37,833 --> 00:04:39,792
-...ja olet mennyttä.
+...ja olet mennyttï¿½.
 
 30
 00:04:41,042 --> 00:04:42,375
-Mutta eikö se -
+Mutta eikï¿½ se -
 
 31
 00:04:42,417 --> 00:04:46,542
-Mennyttä, Emo!|Sitäkö haluat?
+Mennyttï¿½, Emo!|Sitï¿½kï¿½ haluat?
 
 32
 00:04:48,083 --> 00:04:50,000
-Elämäsi tavoite?
+Elï¿½mï¿½si tavoite?
 
 33
 00:04:50,583 --> 00:04:52,250
-Olla mennyttä.
+Olla mennyttï¿½.
 
 34
 00:05:41,833 --> 00:05:43,458
-Emo, sulje silmäsi.
+Emo, sulje silmï¿½si.
 
 35
 00:05:44,917 --> 00:05:46,583
@@ -140,31 +140,31 @@ Miksi?|- Nyt!
 
 36
 00:05:53,750 --> 00:05:56,042
-Hyvä.
+Hyvï¿½.
 
 37
 00:05:59,542 --> 00:06:02,792
-Mitä näet vasemmalla Emo?
+Mitï¿½ nï¿½et vasemmalla Emo?
 
 38
 00:06:04,417 --> 00:06:06,000
-En mitään.|- Todellako?
+En mitï¿½ï¿½n.|- Todellako?
 
 39
 00:06:06,333 --> 00:06:07,917
-En yhtään mitään.
+En yhtï¿½ï¿½n mitï¿½ï¿½n.
 
 40
 00:06:08,042 --> 00:06:12,417
-Ja oikealla,|mitä näet oikealla Emo?
+Ja oikealla,|mitï¿½ nï¿½et oikealla Emo?
 
 41
 00:06:13,875 --> 00:06:16,917
-En mitään Proog, en yhtään mitään...
+En mitï¿½ï¿½n Proog, en yhtï¿½ï¿½n mitï¿½ï¿½n...
 
 42
 00:06:17,083 --> 00:06:18,583
-En mitään!
+En mitï¿½ï¿½n!
 
 43
 00:06:40,625 --> 00:06:42,958
@@ -172,7 +172,7 @@ Kuuntele Proog! Kuuletko tuon!
 
 44
 00:06:43,625 --> 00:06:45,042
-Voimmeko mennä tuonne?
+Voimmeko mennï¿½ tuonne?
 
 45
 00:06:45,208 --> 00:06:48,042
@@ -196,7 +196,7 @@ EI!
 
 50
 00:07:00,875 --> 00:07:03,750
-Enempiä kysymyksiä Emo?
+Enempiï¿½ kysymyksiï¿½ Emo?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -216,23 +216,23 @@ Emo...
 
 55
 00:07:14,500 --> 00:07:18,500
-...miksi et voi nähdä|tämän paikan kauneutta?
+...miksi et voi nï¿½hdï¿½|tï¿½mï¿½n paikan kauneutta?
 
 56
 00:07:18,833 --> 00:07:20,750
-Sitä kuinka se toimii.
+Sitï¿½ kuinka se toimii.
 
 57
 00:07:20,875 --> 00:07:24,000
-Kuinka täydellinen se on.
+Kuinka tï¿½ydellinen se on.
 
 58
 00:07:24,083 --> 00:07:27,417
-Ei, Proog, en näe.
+Ei, Proog, en nï¿½e.
 
 59
 00:07:27,542 --> 00:07:30,333
-En näe, koska täällä ei ole mitään.
+En nï¿½e, koska tï¿½ï¿½llï¿½ ei ole mitï¿½ï¿½n.
 
 60
 00:07:31,500 --> 00:07:35,333
@@ -252,7 +252,7 @@ Proog...
 
 64
 00:07:45,500 --> 00:07:47,333
-Sinä olet sairas.
+Sinï¿½ olet sairas.
 
 65
 00:07:47,375 --> 00:07:49,208
@@ -268,7 +268,7 @@ Se on ansa.
 
 68
 00:07:57,208 --> 00:08:01,750
-Vasemmalla voit nähdä|Babylonin riippuvat puutarhat!
+Vasemmalla voit nï¿½hdï¿½|Babylonin riippuvat puutarhat!
 
 69
 00:08:02,250 --> 00:08:04,292
@@ -280,7 +280,7 @@ Ei, Emo.
 
 71
 00:08:09,417 --> 00:08:12,792
-Oikealla voit nähdä...|...arvaa mitä...
+Oikealla voit nï¿½hdï¿½...|...arvaa mitï¿½...
 
 72
 00:08:13,000 --> 00:08:14,750

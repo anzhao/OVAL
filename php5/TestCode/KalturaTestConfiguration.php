@@ -32,5 +32,5 @@ class KalturaTestConfiguration
 	const SECRET = "CUSTOMIZE_THIS";
 	const ADMIN_SECRET = "CUSTOMIZE_THIS";
 	const SERVICE_URL = "CUSTOMIZE_THIS";
-	const UPLOAD_FILE = "DemoVideo.flv";	
+	const UPLOAD_FILE = "DemoVideo.flv";
 }

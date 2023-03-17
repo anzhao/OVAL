@@ -555,7 +555,7 @@ class KalturaSystemPartnerClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaSystemPartnerClientPlugin($client);
 		return self::$instance;
 	}
@@ -579,4 +579,3 @@ class KalturaSystemPartnerClientPlugin extends KalturaClientPlugin
 		return 'systemPartner';
 	}
 }
-

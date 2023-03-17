@@ -368,4 +368,3 @@ class KalturaAnnotationClientPlugin extends KalturaClientPlugin
 		return 'annotation';
 	}
 }
-

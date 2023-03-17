@@ -147,7 +147,7 @@ class KalturaKalturaInternalToolsClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaKalturaInternalToolsClientPlugin($client);
 		return self::$instance;
 	}
@@ -172,4 +172,3 @@ class KalturaKalturaInternalToolsClientPlugin extends KalturaClientPlugin
 		return 'KalturaInternalTools';
 	}
 }
-

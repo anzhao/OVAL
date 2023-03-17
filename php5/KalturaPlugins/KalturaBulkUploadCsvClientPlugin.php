@@ -101,4 +101,3 @@ class KalturaBulkUploadCsvClientPlugin extends KalturaClientPlugin
 		return 'bulkUploadCsv';
 	}
 }
-

@@ -1,10 +1,10 @@
 1
 00:00:15,042 --> 00:00:18,042
-Nalevo, nalevo vidíme...
+Nalevo, nalevo vidï¿½me...
 
 2
 00:00:18,750 --> 00:00:20,333
-Napravo vidíme...
+Napravo vidï¿½me...
 
 3
 00:00:20,417 --> 00:00:21,917
@@ -12,7 +12,7 @@ Napravo vidíme...
 
 4
 00:00:22,000 --> 00:00:24,625
-Je to tu bezpeèný.|Naprosto bezpeèný.
+Je to tu bezpeï¿½nï¿½.|Naprosto bezpeï¿½nï¿½.
 
 5
 00:00:26,333 --> 00:00:27,333
@@ -24,7 +24,7 @@ Emone, pozor!
 
 7
 00:00:47,125 --> 00:00:48,250
-Jsi zranìnej?
+Jsi zranï¿½nej?
 
 8
 00:00:51,917 --> 00:00:53,917
@@ -32,11 +32,11 @@ Ne, asi ne...|a ty?
 
 9
 00:00:55,625 --> 00:00:57,125
-Já jsem v pohodì.
+Jï¿½ jsem v pohodï¿½.
 
 10
 00:00:57,583 --> 00:01:01,667
-Vstaò|Emone, není to tu bezpeèný.
+Vstaï¿½|Emone, nenï¿½ to tu bezpeï¿½nï¿½.
 
 11
 00:01:02,208 --> 00:01:03,667
@@ -44,11 +44,11 @@ Jdeme.
 
 12
 00:01:03,750 --> 00:01:05,750
-A co dál?
+A co dï¿½l?
 
 13
 00:01:05,875 --> 00:01:07,875
-Uvidíš! Uvidíš!
+Uvidï¿½! Uvidï¿½!
 
 14
 00:01:16,167 --> 00:01:18,375
@@ -56,7 +56,7 @@ Emone, tudy!
 
 15
 00:01:34,958 --> 00:01:35,792
-Pojï za mnou!
+Pojï¿½ za mnou!
 
 16
 00:02:11,583 --> 00:02:12,792
@@ -64,7 +64,7 @@ Rychle, Emone.
 
 17
 00:02:48,375 --> 00:02:50,083
-Emone, ty si nedáváš pozor!
+Emone, ty si nedï¿½vï¿½ pozor!
 
 18
 00:02:50,750 --> 00:02:54,500
@@ -72,19 +72,19 @@ Jenom chci zvednout ten...|...ten telefon.
 
 19
 00:02:55,000 --> 00:02:58,208
-Emone, podívej,|poslouchej mì.
+Emone, podï¿½vej,|poslouchej mï¿½.
 
 20
 00:02:59,750 --> 00:03:02,292
-Musíš se nauèit poslouchat.
+Musï¿½ se nauï¿½it poslouchat.
 
 21
 00:03:03,625 --> 00:03:05,125
-Tohle není žádná hra.
+Tohle nenï¿½ ï¿½ï¿½dnï¿½ hra.
 
 22
 00:03:06,167 --> 00:03:08,750
-Mùžeš, teda vlastnì mùžeme, tu klidnì umøít.
+Mï¿½ï¿½eï¿½, teda vlastnï¿½ mï¿½ï¿½eme, tu klidnï¿½ umï¿½ï¿½t.
 
 23
 00:03:10,208 --> 00:03:14,125
@@ -92,11 +92,11 @@ Poslouchej!|Poslouchej zvuky toho stroje.
 
 24
 00:03:18,333 --> 00:03:20,417
-Poslouchej svùj dech.
+Poslouchej svï¿½j dech.
 
 25
 00:04:27,208 --> 00:04:29,250
-Copak z toho už nejsi unavenej?
+Copak z toho uï¿½ nejsi unavenej?
 
 26
 00:04:29,583 --> 00:04:31,083
@@ -112,39 +112,39 @@ Jeden krok vedle a...
 
 29
 00:04:37,833 --> 00:04:39,792
-...a jsi napadr.
+...a jsi napadrï¿½.
 
 30
 00:04:41,042 --> 00:04:42,375
-Ale pøece...
+Ale pï¿½ece...
 
 31
 00:04:42,417 --> 00:04:46,542
-Napadr, Emone!|To bys chtìl být, napadr?
+Napadrï¿½, Emone!|To bys chtï¿½l bï¿½t, napadrï¿½?
 
 32
 00:04:48,083 --> 00:04:50,000
-To je tvým životním cílem, Emone?
+To je tvï¿½m ï¿½ivotnï¿½m cï¿½lem, Emone?
 
 33
 00:04:50,583 --> 00:04:52,250
-Napadr!
+Napadrï¿½!
 
 34
 00:05:41,833 --> 00:05:43,458
-Emone, zavøi oèi.
+Emone, zavï¿½i oï¿½i.
 
 35
 00:05:44,917 --> 00:05:46,583
-Proè?|Teï!
+Proï¿½?|Teï¿½!
 
 36
 00:05:53,750 --> 00:05:56,042
-Dobøe.|Fajn.
+Dobï¿½e.|Fajn.
 
 37
 00:05:59,542 --> 00:06:02,792
-Emone, vidíš nìco nalevo? No?
+Emone, vidï¿½ nï¿½co nalevo? No?
 
 38
 00:06:04,417 --> 00:06:06,000
@@ -152,23 +152,23 @@ Ne, nic.|- Fakt nic?
 
 39
 00:06:06,333 --> 00:06:07,917
-Ne, vùbec nic.
+Ne, vï¿½bec nic.
 
 40
 00:06:08,042 --> 00:06:12,417
-Vážnì,...a napravo,|co vidíš napravo, Emone?
+Vï¿½nï¿½,...a napravo,|co vidï¿½ napravo, Emone?
 
 41
 00:06:13,875 --> 00:06:16,917
-Hmmm, to samý, Progu, pøesnì to samý...
+Hmmm, to samï¿½, Progu, pï¿½esnï¿½ to samï¿½...
 
 42
 00:06:17,083 --> 00:06:18,583
-Nic!|Skvìlý.
+Nic!|Skvï¿½lï¿½.
 
 43
 00:06:40,625 --> 00:06:42,958
-Progu, poslouchej! Slyšíš to!
+Progu, poslouchej! Slyï¿½ï¿½ to!
 
 44
 00:06:43,625 --> 00:06:45,042
@@ -176,15 +176,15 @@ Jdeme tam?
 
 45
 00:06:45,208 --> 00:06:48,042
-Tam?|To není bezpeèný, Emone.
+Tam?|To nenï¿½ bezpeï¿½nï¿½, Emone.
 
 46
 00:06:49,917 --> 00:06:52,500
-Ale...|- Vìø mi, není.
+Ale...|- Vï¿½ï¿½ mi, nenï¿½.
 
 47
 00:06:53,292 --> 00:06:54,792
-Ale, možná bych mohl...
+Ale, moï¿½nï¿½ bych mohl...
 
 48
 00:06:54,833 --> 00:06:56,333
@@ -196,7 +196,7 @@ NE!
 
 50
 00:07:00,875 --> 00:07:03,750
-Nìjaký další otázky, Emone?
+Nï¿½jakï¿½ dalï¿½ï¿½ otï¿½zky, Emone?
 
 51
 00:07:04,250 --> 00:07:05,917
@@ -216,15 +216,15 @@ Emone...
 
 55
 00:07:14,500 --> 00:07:18,500
-...jak to, že nevidíš, jak je to tu krásný?
+...jak to, ï¿½e nevidï¿½, jak je to tu krï¿½snï¿½?
 
 56
 00:07:18,833 --> 00:07:20,750
-Jak to všechno funguje.
+Jak to vï¿½echno funguje.
 
 57
 00:07:20,875 --> 00:07:24,000
-Jak je to dokonalý.
+Jak je to dokonalï¿½.
 
 58
 00:07:24,083 --> 00:07:27,417
@@ -232,19 +232,19 @@ Ne, Progu, nevidim.
 
 59
 00:07:27,542 --> 00:07:30,333
-Nevidím, protože tu nic není.
+Nevidï¿½m, protoï¿½e tu nic nenï¿½.
 
 60
 00:07:31,500 --> 00:07:35,333
-A proè bych mìl svìøit svùj|život nìèemu, co neexistuje?
+A proï¿½ bych mï¿½l svï¿½ï¿½it svï¿½j|ï¿½ivot nï¿½ï¿½emu, co neexistuje?
 
 61
 00:07:35,583 --> 00:07:37,125
-Mùžeš mi to øíct?
+Mï¿½ï¿½eï¿½ mi to ï¿½ï¿½ct?
 
 62
 00:07:37,500 --> 00:07:39,167
-Odpovìz.
+Odpovï¿½z.
 
 63
 00:07:43,208 --> 00:07:44,583
@@ -252,11 +252,11 @@ Hele Progu...
 
 64
 00:07:45,500 --> 00:07:47,333
-...ty jsi vážnì nemocnej.
+...ty jsi vï¿½nï¿½ nemocnej.
 
 65
 00:07:47,375 --> 00:07:49,208
-Nepøibližuj se ke mnì.
+Nepï¿½ibliï¿½uj se ke mnï¿½.
 
 66
 00:07:52,583 --> 00:07:55,083
@@ -268,7 +268,7 @@ Je to past.
 
 68
 00:07:57,208 --> 00:08:01,750
-Nalevo vidíš|visuté zahrady babylonské!
+Nalevo vidï¿½|visutï¿½ zahrady babylonskï¿½!
 
 69
 00:08:02,250 --> 00:08:04,292
@@ -280,11 +280,11 @@ Ne, Emone.
 
 71
 00:08:09,417 --> 00:08:12,792
-Napravo vidíš...|...Hádej co!
+Napravo vidï¿½...|...Hï¿½dej co!
 
 72
 00:08:13,000 --> 00:08:14,750
-...Rhodský kolos!
+...Rhodskï¿½ kolos!
 
 73
 00:08:15,833 --> 00:08:16,708
@@ -292,7 +292,7 @@ Ne!
 
 74
 00:08:16,750 --> 00:08:22,167
-Rhodský kolos|a je tu jen pro tebe, Progu.
+Rhodskï¿½ kolos|a je tu jen pro tebe, Progu.
 
 75
 00:08:51,333 --> 00:08:53,167
@@ -300,7 +300,7 @@ Je to tam...
 
 76
 00:08:53,208 --> 00:08:55,500
-Øíkám ti,|Emone...
+ï¿½ï¿½kï¿½m ti,|Emone...
 
 77
 00:08:57,333 --> 00:09:00,000

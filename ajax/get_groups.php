@@ -30,14 +30,14 @@ require_once(dirname(__FILE__) . "/../database/users.php");
 
 
 startSession();
-$userID     = $_SESSION['user_id'];
+$userID = $_SESSION['user_id'];
 
 // TODO: validate input
 $classID = $_GET['class_id'];
 
-$user           = new users();
-$groups         = $user->getGroupsByClassAndOwner($classID, $userID);
-$user->close(); 
+$user = new users();
+$groups = $user->getGroupsByClassAndOwner($classID, $userID);
+$user->close();
 
 print json_encode($groups);
 ?>

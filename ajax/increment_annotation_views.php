@@ -31,7 +31,7 @@ require_once(dirname(__FILE__) . "/../database/annotations.php");
 
 
 startSession();
-$userID     = $_SESSION['user_id'];
+$userID = $_SESSION['user_id'];
 
 //print "hello";
 //print_r($_POST);

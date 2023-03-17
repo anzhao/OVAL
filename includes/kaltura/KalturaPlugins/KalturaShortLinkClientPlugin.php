@@ -342,7 +342,7 @@ class KalturaShortLinkClientPlugin extends KalturaClientPlugin
 	 */
 	public static function get(KalturaClient $client)
 	{
-		if(!self::$instance)
+		if (!self::$instance)
 			self::$instance = new KalturaShortLinkClientPlugin($client);
 		return self::$instance;
 	}
@@ -366,4 +366,3 @@ class KalturaShortLinkClientPlugin extends KalturaClientPlugin
 		return 'shortLink';
 	}
 }
-

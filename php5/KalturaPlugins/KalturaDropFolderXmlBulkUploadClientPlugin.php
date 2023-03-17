@@ -83,4 +83,3 @@ class KalturaDropFolderXmlBulkUploadClientPlugin extends KalturaClientPlugin
 		return 'dropFolderXmlBulkUpload';
 	}
 }
-

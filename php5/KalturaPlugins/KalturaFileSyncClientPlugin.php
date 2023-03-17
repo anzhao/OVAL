@@ -335,4 +335,3 @@ class KalturaFileSyncClientPlugin extends KalturaClientPlugin
 		return 'fileSync';
 	}
 }
-

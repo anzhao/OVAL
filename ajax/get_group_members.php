@@ -25,18 +25,18 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-    require_once(dirname(__FILE__) . "/../includes/common.inc.php");
-    require_once(dirname(__FILE__) . "/../database/users.php");
+require_once(dirname(__FILE__) . "/../includes/common.inc.php");
+require_once(dirname(__FILE__) . "/../database/users.php");
 
-    startSession();
+startSession();
 
-    // TODO: validate input
-    $groupID = $_GET['group_id'];
+// TODO: validate input
+$groupID = $_GET['group_id'];
 
-    $user           = new users();
-    $groupMembers   = $user->getGroupMembers($groupID);
+$user = new users();
+$groupMembers = $user->getGroupMembers($groupID);
 
-    $user->close(); 
+$user->close();
 
-    print json_encode($groupMembers);
+print json_encode($groupMembers);
 ?>

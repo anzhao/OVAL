@@ -1468,4 +1468,3 @@ class KalturaDropFolderClientPlugin extends KalturaClientPlugin
 		return 'dropFolder';
 	}
 }
-

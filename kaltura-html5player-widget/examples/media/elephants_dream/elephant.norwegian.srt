@@ -1,10 +1,10 @@
 1
 00:00:15,000 --> 00:00:18,000
-På, på venstre side har vi...
+Pï¿½, pï¿½ venstre side har vi...
 
 2
 00:00:18,167 --> 00:00:20,083
-På høyre side har vi...
+Pï¿½ hï¿½yre side har vi...
 
 3
 00:00:20,083 --> 00:00:22,000
@@ -44,11 +44,11 @@ La oss stikke.
 
 12
 00:01:03,167 --> 00:01:05,167
-Hva nå?
+Hva nï¿½?
 
 13
 00:01:05,208 --> 00:01:07,208
-Du får se!
+Du fï¿½r se!
 
 14
 00:01:16,042 --> 00:01:18,083
@@ -56,7 +56,7 @@ Emo.|Denne veien.
 
 15
 00:01:34,250 --> 00:01:35,542
-Følg meg!
+Fï¿½lg meg!
 
 16
 00:02:11,125 --> 00:02:12,542
@@ -64,19 +64,19 @@ Skynd deg Emo!
 
 17
 00:02:48,083 --> 00:02:50,000
-Du følger ikke med!
+Du fï¿½lger ikke med!
 
 18
 00:02:50,167 --> 00:02:54,125
-Jeg har bare lyst til å ta...|...telefonen.
+Jeg har bare lyst til ï¿½ ta...|...telefonen.
 
 19
 00:02:55,000 --> 00:02:58,042
-Emo, se her,|jeg mener hør her.
+Emo, se her,|jeg mener hï¿½r her.
 
 20
 00:02:59,167 --> 00:03:02,083
-Du må lære deg å høre etter.
+Du mï¿½ lï¿½re deg ï¿½ hï¿½re etter.
 
 21
 00:03:03,167 --> 00:03:05,042
@@ -84,7 +84,7 @@ Dette er ikke en lek.
 
 22
 00:03:05,083 --> 00:03:09,417
-Du, vi, kan lett dø her ute.
+Du, vi, kan lett dï¿½ her ute.
 
 23
 00:03:10,042 --> 00:03:14,042
@@ -124,7 +124,7 @@ Hakkemat, Emo!|Er det det du vil? Hakkemat?
 
 32
 00:04:47,083 --> 00:04:49,083
-Emo, ditt mål i livet?
+Emo, ditt mï¿½l i livet?
 
 33
 00:04:50,125 --> 00:04:52,042
@@ -132,11 +132,11 @@ Hakkemat?
 
 34
 00:05:41,208 --> 00:05:43,125
-Emo, lukk øynene dine.
+Emo, lukk ï¿½ynene dine.
 
 35
 00:05:44,208 --> 00:05:46,125
-Hvorfor det?|- Nå!
+Hvorfor det?|- Nï¿½!
 
 36
 00:05:53,167 --> 00:05:54,792
@@ -144,7 +144,7 @@ Bra.
 
 37
 00:05:59,125 --> 00:06:02,208
-Hva ser du på din venstre side Emo?
+Hva ser du pï¿½ din venstre side Emo?
 
 38
 00:06:04,083 --> 00:06:06,000
@@ -156,7 +156,7 @@ Ingeting i det hele tatt.
 
 40
 00:06:08,000 --> 00:06:12,083
-Og til høyre,|hva ser du på din høyre side Emo?
+Og til hï¿½yre,|hva ser du pï¿½ din hï¿½yre side Emo?
 
 41
 00:06:13,208 --> 00:06:16,208
@@ -168,11 +168,11 @@ Ingenting!|- Flott.
 
 43
 00:06:40,167 --> 00:06:42,833
-Hør Proog! Hører du det!
+Hï¿½r Proog! Hï¿½rer du det!
 
 44
 00:06:43,167 --> 00:06:45,000
-Kan vi gå hit?
+Kan vi gï¿½ hit?
 
 45
 00:06:45,042 --> 00:06:48,000
@@ -196,7 +196,7 @@ NEI!
 
 50
 00:07:00,208 --> 00:07:03,167
-Noen flere spørsmål Emo?
+Noen flere spï¿½rsmï¿½l Emo?
 
 51
 00:07:04,042 --> 00:07:05,208
@@ -216,7 +216,7 @@ Emo...
 
 55
 00:07:14,125 --> 00:07:18,125
-...hvorfor ser du ikke|skjønnheten i det?
+...hvorfor ser du ikke|skjï¿½nnheten i det?
 
 56
 00:07:18,208 --> 00:07:20,167
@@ -268,7 +268,7 @@ Det er en felle.
 
 68
 00:07:57,042 --> 00:08:01,167
-På din venstre side kan du se|Babylons hengende hager!
+Pï¿½ din venstre side kan du se|Babylons hengende hager!
 
 69
 00:08:02,042 --> 00:08:04,083
@@ -280,11 +280,11 @@ Nei, Emo.
 
 71
 00:08:09,083 --> 00:08:12,208
-På din høyre side kan du se...|gjett hva...
+Pï¿½ din hï¿½yre side kan du se...|gjett hva...
 
 72
 00:08:13,000 --> 00:08:14,792
-kolossen på Rhodos!
+kolossen pï¿½ Rhodos!
 
 73
 00:08:15,208 --> 00:08:16,167
@@ -292,7 +292,7 @@ Nei!
 
 74
 00:08:16,167 --> 00:08:22,042
-Kolossen på Rhodos|og den er her bare for deg Proog.
+Kolossen pï¿½ Rhodos|og den er her bare for deg Proog.
 
 75
 00:08:51,083 --> 00:08:53,042
@@ -300,7 +300,7 @@ Den er der...
 
 76
 00:08:53,042 --> 00:08:56,167
-Hører du, Emo...
+Hï¿½rer du, Emo...
 
 77
 00:08:57,083 --> 00:09:00,000

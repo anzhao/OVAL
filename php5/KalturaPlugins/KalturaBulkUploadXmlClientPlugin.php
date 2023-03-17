@@ -81,4 +81,3 @@ class KalturaBulkUploadXmlClientPlugin extends KalturaClientPlugin
 		return 'bulkUploadXml';
 	}
 }
-
